@@ -23,6 +23,12 @@
 		8497D1A921801E6300EF5EB7 /* CommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497D19F21801E6300EF5EB7 /* CommonUtility.m */; };
 		8497D1AD21801E9F00EF5EB7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497D1AC21801E9F00EF5EB7 /* MainViewController.m */; };
 		84C8F877219956F500596DC0 /* VehicleRouteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8F876219956F500596DC0 /* VehicleRouteController.m */; };
+		84C9C3E6219E8A6A00EAFB54 /* BluetoochViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9C3E5219E8A6A00EAFB54 /* BluetoochViewController.m */; };
+		84C9C3E8219E8A7A00EAFB54 /* BluetoochViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C9C3E7219E8A7A00EAFB54 /* BluetoochViewController.xib */; };
+		84C9C3ED219EBA6A00EAFB54 /* TencentRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9C3EB219EBA6A00EAFB54 /* TencentRecognitionViewController.m */; };
+		84C9C3EE219EBA6A00EAFB54 /* TencentRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C9C3EC219EBA6A00EAFB54 /* TencentRecognitionViewController.xib */; };
+		84C9C3F2219EC38B00EAFB54 /* TencentIDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9C3F0219EC38B00EAFB54 /* TencentIDCard.m */; };
+		84C9C3F3219EC38B00EAFB54 /* TencentIDCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C9C3F1219EC38B00EAFB54 /* TencentIDCard.xib */; };
 		84F49AA7219D657F0043850A /* IDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F49AA6219D657F0043850A /* IDCard.m */; };
 		84F49AAA219D661D0043850A /* DriversLicenseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F49AA9219D661D0043850A /* DriversLicenseController.m */; };
 		84F49AAD219D66F20043850A /* FaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F49AAC219D66F20043850A /* FaceController.m */; };
@@ -89,6 +95,15 @@
 		8497D1AC21801E9F00EF5EB7 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		84C8F875219956F500596DC0 /* VehicleRouteController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleRouteController.h; sourceTree = "<group>"; };
 		84C8F876219956F500596DC0 /* VehicleRouteController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleRouteController.m; sourceTree = "<group>"; };
+		84C9C3E4219E8A6A00EAFB54 /* BluetoochViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluetoochViewController.h; sourceTree = "<group>"; };
+		84C9C3E5219E8A6A00EAFB54 /* BluetoochViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoochViewController.m; sourceTree = "<group>"; };
+		84C9C3E7219E8A7A00EAFB54 /* BluetoochViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BluetoochViewController.xib; sourceTree = "<group>"; };
+		84C9C3EA219EBA6A00EAFB54 /* TencentRecognitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TencentRecognitionViewController.h; sourceTree = "<group>"; };
+		84C9C3EB219EBA6A00EAFB54 /* TencentRecognitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TencentRecognitionViewController.m; sourceTree = "<group>"; };
+		84C9C3EC219EBA6A00EAFB54 /* TencentRecognitionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TencentRecognitionViewController.xib; sourceTree = "<group>"; };
+		84C9C3EF219EC38B00EAFB54 /* TencentIDCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TencentIDCard.h; sourceTree = "<group>"; };
+		84C9C3F0219EC38B00EAFB54 /* TencentIDCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TencentIDCard.m; sourceTree = "<group>"; };
+		84C9C3F1219EC38B00EAFB54 /* TencentIDCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TencentIDCard.xib; sourceTree = "<group>"; };
 		84F49AA5219D657F0043850A /* IDCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDCard.h; sourceTree = "<group>"; };
 		84F49AA6219D657F0043850A /* IDCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDCard.m; sourceTree = "<group>"; };
 		84F49AA8219D661D0043850A /* DriversLicenseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DriversLicenseController.h; sourceTree = "<group>"; };
@@ -203,10 +218,12 @@
 				8497D18E21801E6300EF5EB7 /* AppDelegate */,
 				84C8F8742199567800596DC0 /* DrivenRoute */,
 				8497D1AA21801E7B00EF5EB7 /* MainController */,
+				84C9C3E3219E741800EAFB54 /* Bluetooth */,
 				8497D19121801E6300EF5EB7 /* MapController */,
 				84536B72219419DA00131911 /* NFCController */,
 				8497D18A21801E6300EF5EB7 /* RootController */,
 				8437FD2C21955CA0008EABE9 /* FaceRecognition */,
+				84C9C3E9219EBA4900EAFB54 /* TencentFaceRecognition */,
 				8497D19E21801E6300EF5EB7 /* Tool */,
 				8490135D2133CBB700384691 /* Assets.xcassets */,
 				849013622133CBB700384691 /* Info.plist */,
@@ -322,6 +339,29 @@
 			path = DrivenRoute;
 			sourceTree = "<group>";
 		};
+		84C9C3E3219E741800EAFB54 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				84C9C3E4219E8A6A00EAFB54 /* BluetoochViewController.h */,
+				84C9C3E5219E8A6A00EAFB54 /* BluetoochViewController.m */,
+				84C9C3E7219E8A7A00EAFB54 /* BluetoochViewController.xib */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		84C9C3E9219EBA4900EAFB54 /* TencentFaceRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				84C9C3EA219EBA6A00EAFB54 /* TencentRecognitionViewController.h */,
+				84C9C3EB219EBA6A00EAFB54 /* TencentRecognitionViewController.m */,
+				84C9C3EC219EBA6A00EAFB54 /* TencentRecognitionViewController.xib */,
+				84C9C3EF219EC38B00EAFB54 /* TencentIDCard.h */,
+				84C9C3F0219EC38B00EAFB54 /* TencentIDCard.m */,
+				84C9C3F1219EC38B00EAFB54 /* TencentIDCard.xib */,
+			);
+			path = TencentFaceRecognition;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -435,7 +475,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C9C3E8219E8A7A00EAFB54 /* BluetoochViewController.xib in Resources */,
 				84F49AAF219D69DF0043850A /* IDCard.xib in Resources */,
+				84C9C3F3219EC38B00EAFB54 /* TencentIDCard.xib in Resources */,
+				84C9C3EE219EBA6A00EAFB54 /* TencentRecognitionViewController.xib in Resources */,
 				84F49AB4219D7F660043850A /* Face.xib in Resources */,
 				8490135E2133CBB700384691 /* Assets.xcassets in Resources */,
 				84F49AB6219D84E90043850A /* DriversLicenseController.xib in Resources */,
@@ -505,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F49AB2219D77880043850A /* NSString+Crypto.m in Sources */,
+				84C9C3F2219EC38B00EAFB54 /* TencentIDCard.m in Sources */,
 				8497D1A221801E6300EF5EB7 /* RootViewController.m in Sources */,
 				849013642133CBB800384691 /* main.m in Sources */,
 				8497D1A521801E6300EF5EB7 /* LineDashPolyline.m in Sources */,
@@ -516,9 +560,11 @@
 				84C8F877219956F500596DC0 /* VehicleRouteController.m in Sources */,
 				8497D1A821801E6300EF5EB7 /* MANaviAnnotation.m in Sources */,
 				8497D1A621801E6300EF5EB7 /* MANaviRoute.m in Sources */,
+				84C9C3E6219E8A6A00EAFB54 /* BluetoochViewController.m in Sources */,
 				8497D1A921801E6300EF5EB7 /* CommonUtility.m in Sources */,
 				8497D1A321801E6300EF5EB7 /* AppDelegate.m in Sources */,
 				8497D1A421801E6300EF5EB7 /* MapViewController.m in Sources */,
+				84C9C3ED219EBA6A00EAFB54 /* TencentRecognitionViewController.m in Sources */,
 				84F49AA7219D657F0043850A /* IDCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -675,6 +721,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5UT3333NGY;
 				INFOPLIST_FILE = test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -696,6 +743,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

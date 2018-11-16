@@ -11,6 +11,7 @@
 //#import "NFCViewController.h"
 #import "FaceRecognitionViewController.h"
 #import "VehicleRouteController.h"
+#import "TencentRecognitionViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -47,8 +48,9 @@
 - (void)configDataSource
 {
     [self.tableData setDictionary:@{@"MapViewController":@"驾车路径规划",
-                                    @"FaceRecognitionViewController":@"身份验证",
-                                    @"VehicleRouteController":@"行驶轨迹"
+                                    @"FaceRecognitionViewController":@"身份验证(云脉)",
+                                    @"VehicleRouteController":@"行驶轨迹",
+                                    @"TencentRecognitionViewController":@"身份验证(腾讯)"
                                     }];//   @"NFCViewController":@"NFC"
     [self.optionTable reloadData];
 }
@@ -69,7 +71,7 @@
     if (self.tableData.count) {
         NSString *key = [self.tableData.allKeys objectAtIndex:indexPath.row];
         cell.textLabel.text = [self.tableData objectForKey:key];
-        cell.detailTextLabel.text = key;
+//        cell.detailTextLabel.text = key;
     }
     return cell;
 }
