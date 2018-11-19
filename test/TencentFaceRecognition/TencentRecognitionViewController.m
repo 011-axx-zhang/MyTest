@@ -12,7 +12,7 @@
 @interface TencentRecognitionViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tencentTable;
 
-@property (nonatomic, strong) NSArray *dataSource;
+@property (nonatomic, strong) NSMutableDictionary *dataSource;
 @property (nonatomic, strong) NSArray *subVC;
 @end
 
@@ -23,20 +23,26 @@
     self.title = @"身份验证";
     
     self.tencentTable.tableFooterView = [[UIView alloc]init];
+    self.tencentTable.sectionHeaderHeight = 40;
 }
 
 #pragma mark - table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return self.dataSource.count;
+    return self.dataSource.allKeys.count;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSDictionary *dic = [self.dataSource objectAtIndex:section];
-    NSLog(@"values :%ld",dic.allValues.count);
-    return dic.allValues.count;
+    NSString *key = [self.dataSource.allKeys objectAtIndex:section];
+    NSArray *values = [self.dataSource objectForKey:key];
+    return values.count;
 }
-
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UILabel *view = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 40)];
+    view.text = [self.dataSource.allKeys objectAtIndex:section];
+    return view;
+}
 static NSString *cellIdentifier = @"TableCellIdentifier";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -44,6 +50,11 @@ static NSString *cellIdentifier = @"TableCellIdentifier";
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
+    
+    
+    NSString *key = [self.dataSource.allKeys objectAtIndex:indexPath.section];
+    NSArray *value = [self.dataSource objectForKey:key];
+    cell.textLabel.text = [value objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -51,23 +62,33 @@ static NSString *cellIdentifier = @"TableCellIdentifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    NSString *str = [[self.subVC objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
-    
-    NSLog(@"选中了:%@",str);
+    if (indexPath.section) {
+        switch (indexPath.row) {
+            case 0:{
+                TencentIDCard *idVC = [[TencentIDCard alloc]init];
+                [self.navigationController pushViewController:idVC animated:YES];
+            }
+                break;
+            case 1:{
+                TencentIDCard *idVC = [[TencentIDCard alloc]init];
+                [self.navigationController pushViewController:idVC animated:YES];
+            }
+                break;
+        }
+    }
 }
 
 
-- (NSArray *)dataSource
+- (NSMutableDictionary *)dataSource
 {
     if (_dataSource == nil) {
-        _dataSource = [NSArray arrayWithObject:@{@"照片识别":@[@"身份证识别",
-                                                           @"驾驶证识别"],
-                                                 @"人脸核身":@[@"用户上传照片身份信息核验",
-                                                           @"活体检测—获取唇语验证码",
-                                                           @"活体检测视频身份信息核验",
-                                                           @"活体检测视频与用户照片的对比",
-                                                           @"人脸静态活体检测"]}];
+        _dataSource = [[NSMutableDictionary alloc]init];
+        [_dataSource setObject:@[@"用户上传照片身份信息核验",
+                                 @"活体检测—获取唇语验证码",
+                                 @"活体检测视频身份信息核验",
+                                 @"活体检测视频与用户照片的对比",
+                                 @"人脸静态活体检测"] forKey:@"人脸核身"];
+        [_dataSource setObject:@[@"身份证识别",@"驾驶证识别"] forKey:@"照片识别"];
     }
     return _dataSource;
 }
@@ -75,13 +96,7 @@ static NSString *cellIdentifier = @"TableCellIdentifier";
 - (NSArray *)subVC
 {
     if (_subVC == nil) {
-        _subVC = [NSArray arrayWithObjects:@[@"0-0",
-                                             @"0-1"],
-                                           @[@"1-0",
-                                             @"1-1",
-                                             @"1-2",
-                                             @"1-3",
-                                             @"1-4"], nil];
+        _subVC = [NSArray arrayWithObjects:@[@"1-0",@"1-1"],@[@"0-0",@"0-1",@"0-2",@"0-3",@"0-4"],nil];
     }
     return _subVC;
 }

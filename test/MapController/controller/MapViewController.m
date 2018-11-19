@@ -330,6 +330,10 @@
     //发起逆地理编码
     [self.search AMapReGoecodeSearch:regeo];
 }
+- (void)amapLocationManager:(AMapLocationManager *)manager didUpdateLocation:(CLLocation *)location reGeocode:(AMapLocationReGeocode *)reGeocode
+{
+    NSLog(@"定位回调新接口");
+}
 //  逆地理编码回调
 - (void)onReGeocodeSearchDone:(AMapReGeocodeSearchRequest *)request response:(AMapReGeocodeSearchResponse *)response
 {
