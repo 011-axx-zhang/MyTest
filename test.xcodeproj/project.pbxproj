@@ -29,7 +29,9 @@
 		84C9C3EE219EBA6A00EAFB54 /* TencentRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C9C3EC219EBA6A00EAFB54 /* TencentRecognitionViewController.xib */; };
 		84C9C3F2219EC38B00EAFB54 /* TencentIDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9C3F0219EC38B00EAFB54 /* TencentIDCard.m */; };
 		84C9C3F3219EC38B00EAFB54 /* TencentIDCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C9C3F1219EC38B00EAFB54 /* TencentIDCard.xib */; };
-		84E6A0CB21A2B7F200A67ADF /* TokenCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84E6A0C921A2B7F200A67ADF /* TokenCode.cpp */; };
+		84E6A0CD21A2BC1900A67ADF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E6A0CC21A2BC1900A67ADF /* libc++.tbd */; };
+		84E6A0E421A2C3E700A67ADF /* DrivingLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E6A0E221A2C3E700A67ADF /* DrivingLicense.m */; };
+		84E6A0E521A2C3E700A67ADF /* DrivingLicense.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E6A0E321A2C3E700A67ADF /* DrivingLicense.xib */; };
 		84F49AA7219D657F0043850A /* IDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F49AA6219D657F0043850A /* IDCard.m */; };
 		84F49AAA219D661D0043850A /* DriversLicenseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F49AA9219D661D0043850A /* DriversLicenseController.m */; };
 		84F49AAD219D66F20043850A /* FaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F49AAC219D66F20043850A /* FaceController.m */; };
@@ -105,8 +107,10 @@
 		84C9C3EF219EC38B00EAFB54 /* TencentIDCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TencentIDCard.h; sourceTree = "<group>"; };
 		84C9C3F0219EC38B00EAFB54 /* TencentIDCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TencentIDCard.m; sourceTree = "<group>"; };
 		84C9C3F1219EC38B00EAFB54 /* TencentIDCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TencentIDCard.xib; sourceTree = "<group>"; };
-		84E6A0C921A2B7F200A67ADF /* TokenCode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TokenCode.cpp; sourceTree = "<group>"; };
-		84E6A0CA21A2B7F200A67ADF /* TokenCode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TokenCode.hpp; sourceTree = "<group>"; };
+		84E6A0CC21A2BC1900A67ADF /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		84E6A0E121A2C3E700A67ADF /* DrivingLicense.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrivingLicense.h; sourceTree = "<group>"; };
+		84E6A0E221A2C3E700A67ADF /* DrivingLicense.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrivingLicense.m; sourceTree = "<group>"; };
+		84E6A0E321A2C3E700A67ADF /* DrivingLicense.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrivingLicense.xib; sourceTree = "<group>"; };
 		84F49AA5219D657F0043850A /* IDCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDCard.h; sourceTree = "<group>"; };
 		84F49AA6219D657F0043850A /* IDCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDCard.m; sourceTree = "<group>"; };
 		84F49AA8219D661D0043850A /* DriversLicenseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DriversLicenseController.h; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E6A0CD21A2BC1900A67ADF /* libc++.tbd in Frameworks */,
 				8451EFC9217976B000CB247E /* UIKit.framework in Frameworks */,
 				EC3C4FD1A4FD9074BFC52D6F /* libPods-test.a in Frameworks */,
 			);
@@ -178,6 +183,7 @@
 		8451EFC7217976AF00CB247E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84E6A0CC21A2BC1900A67ADF /* libc++.tbd */,
 				84536B70219419AD00131911 /* CoreNFC.framework */,
 				8451EFC8217976B000CB247E /* UIKit.framework */,
 				94C9596AE61EBE5FDE6F7368 /* libPods-test.a */,
@@ -361,8 +367,9 @@
 				84C9C3EF219EC38B00EAFB54 /* TencentIDCard.h */,
 				84C9C3F0219EC38B00EAFB54 /* TencentIDCard.m */,
 				84C9C3F1219EC38B00EAFB54 /* TencentIDCard.xib */,
-				84E6A0C921A2B7F200A67ADF /* TokenCode.cpp */,
-				84E6A0CA21A2B7F200A67ADF /* TokenCode.hpp */,
+				84E6A0E121A2C3E700A67ADF /* DrivingLicense.h */,
+				84E6A0E221A2C3E700A67ADF /* DrivingLicense.m */,
+				84E6A0E321A2C3E700A67ADF /* DrivingLicense.xib */,
 			);
 			path = TencentFaceRecognition;
 			sourceTree = "<group>";
@@ -481,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C9C3E8219E8A7A00EAFB54 /* BluetoochViewController.xib in Resources */,
+				84E6A0E521A2C3E700A67ADF /* DrivingLicense.xib in Resources */,
 				84F49AAF219D69DF0043850A /* IDCard.xib in Resources */,
 				84C9C3F3219EC38B00EAFB54 /* TencentIDCard.xib in Resources */,
 				84C9C3EE219EBA6A00EAFB54 /* TencentRecognitionViewController.xib in Resources */,
@@ -561,12 +569,12 @@
 				84F49AAD219D66F20043850A /* FaceController.m in Sources */,
 				8437FD2F21958225008EABE9 /* FaceRecognitionViewController.m in Sources */,
 				8497D1AD21801E9F00EF5EB7 /* MainViewController.m in Sources */,
+				84E6A0E421A2C3E700A67ADF /* DrivingLicense.m in Sources */,
 				8497D1A721801E6300EF5EB7 /* MANaviPolyline.m in Sources */,
 				84C8F877219956F500596DC0 /* VehicleRouteController.m in Sources */,
 				8497D1A821801E6300EF5EB7 /* MANaviAnnotation.m in Sources */,
 				8497D1A621801E6300EF5EB7 /* MANaviRoute.m in Sources */,
 				84C9C3E6219E8A6A00EAFB54 /* BluetoochViewController.m in Sources */,
-				84E6A0CB21A2B7F200A67ADF /* TokenCode.cpp in Sources */,
 				8497D1A921801E6300EF5EB7 /* CommonUtility.m in Sources */,
 				8497D1A321801E6300EF5EB7 /* AppDelegate.m in Sources */,
 				8497D1A421801E6300EF5EB7 /* MapViewController.m in Sources */,

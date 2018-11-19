@@ -61,7 +61,11 @@
 
 
 
-
+- (NSString *)getCode
+{
+    NSString *a = [NSString stringWithFormat:@"a=1256192072&b=&k=AKIDfFfu11tjW8czGUgVN8jBSYSPKKG7DKfp&e=[expiredTime]&t=[currentTime]&r=[rand]&f=[fileid]"];
+    return a;
+}
 
 
 - (IBAction)checkIt:(id)sender {
