@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		8437FD2F21958225008EABE9 /* FaceRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437FD2E21958225008EABE9 /* FaceRecognitionViewController.m */; };
+		8451D72321A52E7700F05F3B /* DrivingLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451D71D21A52E7700F05F3B /* DrivingLicense.m */; };
+		8451D72421A52E7700F05F3B /* TencentIDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451D71E21A52E7700F05F3B /* TencentIDCard.m */; };
+		8451D72521A52E7700F05F3B /* DrivingLicense.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8451D71F21A52E7700F05F3B /* DrivingLicense.xib */; };
+		8451D72621A52E7700F05F3B /* TencentIDCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8451D72021A52E7700F05F3B /* TencentIDCard.xib */; };
+		8451D72A21A52E9100F05F3B /* FaceIdCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451D72821A52E9100F05F3B /* FaceIdCard.m */; };
+		8451D72B21A52E9100F05F3B /* FaceIdCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8451D72921A52E9100F05F3B /* FaceIdCard.xib */; };
 		8451EFC9217976B000CB247E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8451EFC8217976B000CB247E /* UIKit.framework */; };
 		8490135E2133CBB700384691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8490135D2133CBB700384691 /* Assets.xcassets */; };
 		849013642133CBB800384691 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 849013632133CBB800384691 /* main.m */; };
 		8490136E2133CBB800384691 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8490136D2133CBB800384691 /* testTests.m */; };
 		849013792133CBB800384691 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 849013782133CBB800384691 /* testUITests.m */; };
+		849522B521A5489800A22BF5 /* VideoAndLipLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 849522B321A5489800A22BF5 /* VideoAndLipLanguage.m */; };
+		849522B621A5489800A22BF5 /* VideoAndLipLanguage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849522B421A5489800A22BF5 /* VideoAndLipLanguage.xib */; };
 		8497D1A221801E6300EF5EB7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497D18C21801E6300EF5EB7 /* RootViewController.m */; };
 		8497D1A321801E6300EF5EB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497D19021801E6300EF5EB7 /* AppDelegate.m */; };
 		8497D1A421801E6300EF5EB7 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497D19321801E6300EF5EB7 /* MapViewController.m */; };
@@ -27,11 +35,7 @@
 		84C9C3E8219E8A7A00EAFB54 /* BluetoochViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C9C3E7219E8A7A00EAFB54 /* BluetoochViewController.xib */; };
 		84C9C3ED219EBA6A00EAFB54 /* TencentRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9C3EB219EBA6A00EAFB54 /* TencentRecognitionViewController.m */; };
 		84C9C3EE219EBA6A00EAFB54 /* TencentRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C9C3EC219EBA6A00EAFB54 /* TencentRecognitionViewController.xib */; };
-		84C9C3F2219EC38B00EAFB54 /* TencentIDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9C3F0219EC38B00EAFB54 /* TencentIDCard.m */; };
-		84C9C3F3219EC38B00EAFB54 /* TencentIDCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C9C3F1219EC38B00EAFB54 /* TencentIDCard.xib */; };
 		84E6A0CD21A2BC1900A67ADF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E6A0CC21A2BC1900A67ADF /* libc++.tbd */; };
-		84E6A0E421A2C3E700A67ADF /* DrivingLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E6A0E221A2C3E700A67ADF /* DrivingLicense.m */; };
-		84E6A0E521A2C3E700A67ADF /* DrivingLicense.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E6A0E321A2C3E700A67ADF /* DrivingLicense.xib */; };
 		84F49AA7219D657F0043850A /* IDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F49AA6219D657F0043850A /* IDCard.m */; };
 		84F49AAA219D661D0043850A /* DriversLicenseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F49AA9219D661D0043850A /* DriversLicenseController.m */; };
 		84F49AAD219D66F20043850A /* FaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F49AAC219D66F20043850A /* FaceController.m */; };
@@ -65,6 +69,15 @@
 		8437FD2721952C4C008EABE9 /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
 		8437FD2D21958225008EABE9 /* FaceRecognitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceRecognitionViewController.h; sourceTree = "<group>"; };
 		8437FD2E21958225008EABE9 /* FaceRecognitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceRecognitionViewController.m; sourceTree = "<group>"; };
+		8451D71D21A52E7700F05F3B /* DrivingLicense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrivingLicense.m; sourceTree = "<group>"; };
+		8451D71E21A52E7700F05F3B /* TencentIDCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TencentIDCard.m; sourceTree = "<group>"; };
+		8451D71F21A52E7700F05F3B /* DrivingLicense.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrivingLicense.xib; sourceTree = "<group>"; };
+		8451D72021A52E7700F05F3B /* TencentIDCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TencentIDCard.xib; sourceTree = "<group>"; };
+		8451D72121A52E7700F05F3B /* DrivingLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrivingLicense.h; sourceTree = "<group>"; };
+		8451D72221A52E7700F05F3B /* TencentIDCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentIDCard.h; sourceTree = "<group>"; };
+		8451D72721A52E9100F05F3B /* FaceIdCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceIdCard.h; sourceTree = "<group>"; };
+		8451D72821A52E9100F05F3B /* FaceIdCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceIdCard.m; sourceTree = "<group>"; };
+		8451D72921A52E9100F05F3B /* FaceIdCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaceIdCard.xib; sourceTree = "<group>"; };
 		8451EFC8217976B000CB247E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84536B70219419AD00131911 /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
 		849013512133CBB600384691 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +90,9 @@
 		849013742133CBB800384691 /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		849013782133CBB800384691 /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		8490137A2133CBB800384691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849522B221A5489800A22BF5 /* VideoAndLipLanguage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoAndLipLanguage.h; sourceTree = "<group>"; };
+		849522B321A5489800A22BF5 /* VideoAndLipLanguage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoAndLipLanguage.m; sourceTree = "<group>"; };
+		849522B421A5489800A22BF5 /* VideoAndLipLanguage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoAndLipLanguage.xib; sourceTree = "<group>"; };
 		8497D18C21801E6300EF5EB7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		8497D18D21801E6300EF5EB7 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		8497D18F21801E6300EF5EB7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,13 +120,7 @@
 		84C9C3EA219EBA6A00EAFB54 /* TencentRecognitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TencentRecognitionViewController.h; sourceTree = "<group>"; };
 		84C9C3EB219EBA6A00EAFB54 /* TencentRecognitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TencentRecognitionViewController.m; sourceTree = "<group>"; };
 		84C9C3EC219EBA6A00EAFB54 /* TencentRecognitionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TencentRecognitionViewController.xib; sourceTree = "<group>"; };
-		84C9C3EF219EC38B00EAFB54 /* TencentIDCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TencentIDCard.h; sourceTree = "<group>"; };
-		84C9C3F0219EC38B00EAFB54 /* TencentIDCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TencentIDCard.m; sourceTree = "<group>"; };
-		84C9C3F1219EC38B00EAFB54 /* TencentIDCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TencentIDCard.xib; sourceTree = "<group>"; };
 		84E6A0CC21A2BC1900A67ADF /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		84E6A0E121A2C3E700A67ADF /* DrivingLicense.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrivingLicense.h; sourceTree = "<group>"; };
-		84E6A0E221A2C3E700A67ADF /* DrivingLicense.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrivingLicense.m; sourceTree = "<group>"; };
-		84E6A0E321A2C3E700A67ADF /* DrivingLicense.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrivingLicense.xib; sourceTree = "<group>"; };
 		84F49AA5219D657F0043850A /* IDCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDCard.h; sourceTree = "<group>"; };
 		84F49AA6219D657F0043850A /* IDCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDCard.m; sourceTree = "<group>"; };
 		84F49AA8219D661D0043850A /* DriversLicenseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DriversLicenseController.h; sourceTree = "<group>"; };
@@ -178,6 +188,32 @@
 				84F49AB3219D7F660043850A /* Face.xib */,
 			);
 			path = FaceRecognition;
+			sourceTree = "<group>";
+		};
+		8451D71B21A52E7700F05F3B /* Face */ = {
+			isa = PBXGroup;
+			children = (
+				8451D72721A52E9100F05F3B /* FaceIdCard.h */,
+				8451D72821A52E9100F05F3B /* FaceIdCard.m */,
+				8451D72921A52E9100F05F3B /* FaceIdCard.xib */,
+				849522B221A5489800A22BF5 /* VideoAndLipLanguage.h */,
+				849522B321A5489800A22BF5 /* VideoAndLipLanguage.m */,
+				849522B421A5489800A22BF5 /* VideoAndLipLanguage.xib */,
+			);
+			path = Face;
+			sourceTree = "<group>";
+		};
+		8451D71C21A52E7700F05F3B /* License */ = {
+			isa = PBXGroup;
+			children = (
+				8451D72121A52E7700F05F3B /* DrivingLicense.h */,
+				8451D71D21A52E7700F05F3B /* DrivingLicense.m */,
+				8451D71F21A52E7700F05F3B /* DrivingLicense.xib */,
+				8451D72221A52E7700F05F3B /* TencentIDCard.h */,
+				8451D71E21A52E7700F05F3B /* TencentIDCard.m */,
+				8451D72021A52E7700F05F3B /* TencentIDCard.xib */,
+			);
+			path = License;
 			sourceTree = "<group>";
 		};
 		8451EFC7217976AF00CB247E /* Frameworks */ = {
@@ -361,15 +397,11 @@
 		84C9C3E9219EBA4900EAFB54 /* TencentFaceRecognition */ = {
 			isa = PBXGroup;
 			children = (
+				8451D71B21A52E7700F05F3B /* Face */,
+				8451D71C21A52E7700F05F3B /* License */,
 				84C9C3EA219EBA6A00EAFB54 /* TencentRecognitionViewController.h */,
 				84C9C3EB219EBA6A00EAFB54 /* TencentRecognitionViewController.m */,
 				84C9C3EC219EBA6A00EAFB54 /* TencentRecognitionViewController.xib */,
-				84C9C3EF219EC38B00EAFB54 /* TencentIDCard.h */,
-				84C9C3F0219EC38B00EAFB54 /* TencentIDCard.m */,
-				84C9C3F1219EC38B00EAFB54 /* TencentIDCard.xib */,
-				84E6A0E121A2C3E700A67ADF /* DrivingLicense.h */,
-				84E6A0E221A2C3E700A67ADF /* DrivingLicense.m */,
-				84E6A0E321A2C3E700A67ADF /* DrivingLicense.xib */,
 			);
 			path = TencentFaceRecognition;
 			sourceTree = "<group>";
@@ -487,11 +519,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8451D72B21A52E9100F05F3B /* FaceIdCard.xib in Resources */,
 				84C9C3E8219E8A7A00EAFB54 /* BluetoochViewController.xib in Resources */,
-				84E6A0E521A2C3E700A67ADF /* DrivingLicense.xib in Resources */,
 				84F49AAF219D69DF0043850A /* IDCard.xib in Resources */,
-				84C9C3F3219EC38B00EAFB54 /* TencentIDCard.xib in Resources */,
+				8451D72621A52E7700F05F3B /* TencentIDCard.xib in Resources */,
 				84C9C3EE219EBA6A00EAFB54 /* TencentRecognitionViewController.xib in Resources */,
+				849522B621A5489800A22BF5 /* VideoAndLipLanguage.xib in Resources */,
+				8451D72521A52E7700F05F3B /* DrivingLicense.xib in Resources */,
 				84F49AB4219D7F660043850A /* Face.xib in Resources */,
 				8490135E2133CBB700384691 /* Assets.xcassets in Resources */,
 				84F49AB6219D84E90043850A /* DriversLicenseController.xib in Resources */,
@@ -561,21 +595,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F49AB2219D77880043850A /* NSString+Crypto.m in Sources */,
-				84C9C3F2219EC38B00EAFB54 /* TencentIDCard.m in Sources */,
 				8497D1A221801E6300EF5EB7 /* RootViewController.m in Sources */,
 				849013642133CBB800384691 /* main.m in Sources */,
 				8497D1A521801E6300EF5EB7 /* LineDashPolyline.m in Sources */,
+				8451D72321A52E7700F05F3B /* DrivingLicense.m in Sources */,
+				8451D72A21A52E9100F05F3B /* FaceIdCard.m in Sources */,
 				84F49AAA219D661D0043850A /* DriversLicenseController.m in Sources */,
 				84F49AAD219D66F20043850A /* FaceController.m in Sources */,
 				8437FD2F21958225008EABE9 /* FaceRecognitionViewController.m in Sources */,
 				8497D1AD21801E9F00EF5EB7 /* MainViewController.m in Sources */,
-				84E6A0E421A2C3E700A67ADF /* DrivingLicense.m in Sources */,
 				8497D1A721801E6300EF5EB7 /* MANaviPolyline.m in Sources */,
+				8451D72421A52E7700F05F3B /* TencentIDCard.m in Sources */,
 				84C8F877219956F500596DC0 /* VehicleRouteController.m in Sources */,
 				8497D1A821801E6300EF5EB7 /* MANaviAnnotation.m in Sources */,
 				8497D1A621801E6300EF5EB7 /* MANaviRoute.m in Sources */,
 				84C9C3E6219E8A6A00EAFB54 /* BluetoochViewController.m in Sources */,
 				8497D1A921801E6300EF5EB7 /* CommonUtility.m in Sources */,
+				849522B521A5489800A22BF5 /* VideoAndLipLanguage.m in Sources */,
 				8497D1A321801E6300EF5EB7 /* AppDelegate.m in Sources */,
 				8497D1A421801E6300EF5EB7 /* MapViewController.m in Sources */,
 				84C9C3ED219EBA6A00EAFB54 /* TencentRecognitionViewController.m in Sources */,
