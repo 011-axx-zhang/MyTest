@@ -26,17 +26,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+//    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     [AMapServices sharedServices].apiKey = AMapSDKAPPKey;
     
-    MainViewController *rootVC = [[MainViewController alloc]init];
+//    MainViewController *rootVC = [[MainViewController alloc]init];
     
-    UINavigationController *rootNav = [[UINavigationController alloc]initWithRootViewController:rootVC];
+//    UINavigationController *rootNav = [[UINavigationController alloc]initWithRootViewController:rootVC];
     
-    self.window.rootViewController = rootNav;
+//    self.window.rootViewController = rootNav;
     
-    [self.window makeKeyAndVisible];
+//    [self.window makeKeyAndVisible];
     
     return YES;
 }
