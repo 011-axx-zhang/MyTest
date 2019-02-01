@@ -42,7 +42,8 @@
                                     @"FaceRecognitionViewController":@"身份验证(云脉)",
                                     @"VehicleRouteController":@"行驶轨迹",
                                     @"TencentRecognitionViewController":@"身份验证(腾讯)",
-                                    @"CustomKeyboardController":@"自定义键盘"
+                                    @"CustomKeyboardController":@"自定义键盘",
+                                    @"CustomChatViewController":@"聊天"
                                     }];//   @"NFCViewController":@"NFC"
     [self.optionTable reloadData];
 }

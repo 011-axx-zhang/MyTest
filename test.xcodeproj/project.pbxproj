@@ -182,6 +182,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		842B08442204490100514046 /* ChatController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChatController;
+			sourceTree = "<group>";
+		};
 		8437FD2C21955CA0008EABE9 /* FaceRecognition */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +284,7 @@
 				8497D19121801E6300EF5EB7 /* MapController */,
 				84536B72219419DA00131911 /* NFCController */,
 				84F47A4F21EDB37C009CBFE9 /* KeyboardController */,
+				842B08442204490100514046 /* ChatController */,
 				8497D18A21801E6300EF5EB7 /* RootController */,
 				8437FD2C21955CA0008EABE9 /* FaceRecognition */,
 				84C9C3E9219EBA4900EAFB54 /* TencentFaceRecognition */,
