@@ -45,7 +45,7 @@
     UILabel *view = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 40)];
     view.text = [self.dataSource.allKeys objectAtIndex:section];
     
-    NSLog(@"section header :%@",NSStringFromCGRect(view.frame));
+//    NSLog(@"section header :%@",NSStringFromCGRect(view.frame));
     return view;
 }
 static NSString *cellIdentifier = @"TableCellIdentifier";
@@ -67,6 +67,9 @@ static NSString *cellIdentifier = @"TableCellIdentifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"FaceVerifyId://"] options:@{} completionHandler:nil];
+    /*
     NSInteger index = indexPath.section*10 + indexPath.row;
     switch (index) {
         case 0:{
@@ -104,7 +107,7 @@ static NSString *cellIdentifier = @"TableCellIdentifier";
             [self.navigationController pushViewController:idVC animated:YES];
         }
             break;
-    }
+    }*/
 }
 
 

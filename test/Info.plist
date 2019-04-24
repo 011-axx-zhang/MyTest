@@ -22,11 +22,15 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NFCReaderUsageDescription</key>
+	<string>允许使用 NFC 权限</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>允许使用蓝牙</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>需要获取当前位置信息</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
@@ -35,10 +39,10 @@
 	<string>需要向相册中添加图片</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>访问相册</string>
-	<key>NFCReaderUsageDescription</key>
-	<string>允许使用 NFC 权限</string>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>允许使用蓝牙</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

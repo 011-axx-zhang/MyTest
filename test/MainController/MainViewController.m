@@ -14,12 +14,10 @@
 #import "TencentRecognitionViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *optionTable;
 
-@property (nonatomic, strong) UITableView *optionTable;
 
 @property (nonatomic, strong) NSMutableDictionary *tableData;
-//@property (nonatomic, strong) NSMutableArray *optionArr;
-//@property (nonatomic, strong) NSMutableArray *detailArr;
 
 @end
 
@@ -28,8 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"导航规划";
-    self.view.backgroundColor = [UIColor whiteColor];
     
     [self configView];
     [self configDataSource];
@@ -37,12 +33,7 @@
 
 - (void)configView
 {
-    self.optionTable = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-66) style:UITableViewStylePlain];
-    self.optionTable.delegate = self;
-    self.optionTable.dataSource = self;
-    self.optionTable.rowHeight = 60;
     self.optionTable.tableFooterView = [[UIView alloc]init];
-    [self.view addSubview:self.optionTable];
 }
 
 - (void)configDataSource
@@ -50,7 +41,9 @@
     [self.tableData setDictionary:@{@"MapViewController":@"驾车路径规划",
                                     @"FaceRecognitionViewController":@"身份验证(云脉)",
                                     @"VehicleRouteController":@"行驶轨迹",
-                                    @"TencentRecognitionViewController":@"身份验证(腾讯)"
+                                    @"TencentRecognitionViewController":@"身份验证(腾讯)",
+                                    @"CustomKeyboardController":@"自定义键盘",
+                                    @"CustomChatViewController":@"聊天"
                                     }];//   @"NFCViewController":@"NFC"
     [self.optionTable reloadData];
 }
