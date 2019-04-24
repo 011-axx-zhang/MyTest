@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254CFB452237995C00DC385C /* CustomChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 254CFB442237995C00DC385C /* CustomChatViewController.m */; };
+		259C3FC02270756400F6234F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 259C3FBF2270756400F6234F /* ViewController.m */; };
 		8437FD2F21958225008EABE9 /* FaceRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437FD2E21958225008EABE9 /* FaceRecognitionViewController.m */; };
 		8451D72321A52E7700F05F3B /* DrivingLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451D71D21A52E7700F05F3B /* DrivingLicense.m */; };
 		8451D72421A52E7700F05F3B /* TencentIDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451D71E21A52E7700F05F3B /* TencentIDCard.m */; };
@@ -68,6 +70,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		254CFB432237995C00DC385C /* CustomChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomChatViewController.h; sourceTree = "<group>"; };
+		254CFB442237995C00DC385C /* CustomChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomChatViewController.m; sourceTree = "<group>"; };
+		259C3FBE2270756300F6234F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		259C3FBF2270756400F6234F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7CD906A0D14E173DF2CD3F76 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		7DEBAC627F62038F7BCFB3C7 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		8437FD2721952C4C008EABE9 /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
@@ -173,6 +179,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		254CFB3F22378CD600DC385C /* ChatController */ = {
+			isa = PBXGroup;
+			children = (
+				254CFB432237995C00DC385C /* CustomChatViewController.h */,
+				254CFB442237995C00DC385C /* CustomChatViewController.m */,
+			);
+			path = ChatController;
+			sourceTree = "<group>";
+		};
 		30113B86393AE54B550491DA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,13 +195,6 @@
 				7DEBAC627F62038F7BCFB3C7 /* Pods-test.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		842B08442204490100514046 /* ChatController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ChatController;
 			sourceTree = "<group>";
 		};
 		8437FD2C21955CA0008EABE9 /* FaceRecognition */ = {
@@ -276,6 +284,7 @@
 		849013532133CBB600384691 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				254CFB3F22378CD600DC385C /* ChatController */,
 				8437FD2721952C4C008EABE9 /* test.entitlements */,
 				8497D18E21801E6300EF5EB7 /* AppDelegate */,
 				84C8F8742199567800596DC0 /* DrivenRoute */,
@@ -284,7 +293,6 @@
 				8497D19121801E6300EF5EB7 /* MapController */,
 				84536B72219419DA00131911 /* NFCController */,
 				84F47A4F21EDB37C009CBFE9 /* KeyboardController */,
-				842B08442204490100514046 /* ChatController */,
 				8497D18A21801E6300EF5EB7 /* RootController */,
 				8437FD2C21955CA0008EABE9 /* FaceRecognition */,
 				84C9C3E9219EBA4900EAFB54 /* TencentFaceRecognition */,
@@ -334,6 +342,8 @@
 		8497D18E21801E6300EF5EB7 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				259C3FBE2270756300F6234F /* ViewController.h */,
+				259C3FBF2270756400F6234F /* ViewController.m */,
 				8497D18F21801E6300EF5EB7 /* AppDelegate.h */,
 				8497D19021801E6300EF5EB7 /* AppDelegate.m */,
 				84F47A9621EDDAE2009CBFE9 /* Main.storyboard */,
@@ -466,6 +476,7 @@
 				8490134E2133CBB600384691 /* Frameworks */,
 				8490134F2133CBB600384691 /* Resources */,
 				7D46C9549AFC04038EB915BC /* [CP] Copy Pods Resources */,
+				4A1CD9050435ED830B16332B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -599,6 +610,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4A1CD9050435ED830B16332B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test/Pods-test-frameworks.sh",
+				"${PODS_ROOT}/TXIMSDK_TUIKit_iOS/iOS/TUIKit.framework",
+				"${PODS_ROOT}/TXIMSDK_iOS/iOS/ImSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test/Pods-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7D46C9549AFC04038EB915BC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -650,12 +685,14 @@
 				8497D1A521801E6300EF5EB7 /* LineDashPolyline.m in Sources */,
 				8451D72321A52E7700F05F3B /* DrivingLicense.m in Sources */,
 				8451D72A21A52E9100F05F3B /* FaceIdCard.m in Sources */,
+				259C3FC02270756400F6234F /* ViewController.m in Sources */,
 				84F47A5721EDC88C009CBFE9 /* CustomKeyboardView.m in Sources */,
 				84F49AAA219D661D0043850A /* DriversLicenseController.m in Sources */,
 				84F49AAD219D66F20043850A /* FaceController.m in Sources */,
 				8437FD2F21958225008EABE9 /* FaceRecognitionViewController.m in Sources */,
 				8497D1AD21801E9F00EF5EB7 /* MainViewController.m in Sources */,
 				8497D1A721801E6300EF5EB7 /* MANaviPolyline.m in Sources */,
+				254CFB452237995C00DC385C /* CustomChatViewController.m in Sources */,
 				8451D72421A52E7700F05F3B /* TencentIDCard.m in Sources */,
 				84C8F877219956F500596DC0 /* VehicleRouteController.m in Sources */,
 				84F47A5421EDB3F2009CBFE9 /* CustomKeyboardController.m in Sources */,
@@ -829,8 +866,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tima.carGPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = CarGPSTestDevelopmentProfile;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = TimaAllDemoProfiles;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -851,7 +888,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tima.carGPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
