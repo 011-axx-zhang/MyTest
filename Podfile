@@ -10,7 +10,7 @@ pod 'AMapNavi-NO-IDFA',     '~> 6.1.1'
 pod 'MJExtension',	    '~> 3.0.15.1'
 pod 'AFNetworking', 	    '~> 3.2.1'
 
-
+pod 'MMKV', 			'~> 1.0.15'
 
 
 
