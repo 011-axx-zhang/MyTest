@@ -47,6 +47,8 @@
         NSLog(@"登陆失败code:%d   msg:%@",code,msg);
     }];
     
+    //  增加了弹出框
+    
 //    MainViewController *rootVC = [[MainViewController alloc]init];
     
 //    UINavigationController *rootNav = [[UINavigationController alloc]initWithRootViewController:rootVC];
