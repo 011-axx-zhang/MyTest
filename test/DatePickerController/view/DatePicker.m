@@ -1,54 +1,37 @@
 //
-//  ViewController.m
+//  DatePicker.m
 //  test
 //
-//  Created by 亭子 on 2019/4/24.
-//  Copyright © 2019 Timanetwork. All rights reserved.
+//  Created by 亭子 on 2019/4/29.
+//  Copyright © 2019 Tima. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DatePicker.h"
 
-@interface ViewController ()<UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate>
+@implementation DatePicker
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    NSInteger   nowEndHour;     //  今天---距离 24 点相差的时间
-    NSInteger   nowHour;        //  今天---时
-    NSInteger   nowMinute;      //  今天---分
-    NSInteger   selectDay;      //  选中今天---今天、明天
-    NSInteger   selectHour;     //  选中今天---时
-    NSInteger   selectMinute;   //  选中今天---分
-    UIPickerView *today;
-    UIPickerView *tomorrow;
-    
+    self = [super initWithFrame:frame];
+    if (self) {
+        //
+        [self addChildView];
+    }
+    return self;
 }
 
-@property (nonatomic, strong) NSArray *dayArray;
-@property (nonatomic, strong) NSArray *hourArray;
-@property (nonatomic, strong) NSArray *minuteArray;
-
-//  结束时间的数据源
-@property (nonatomic, strong) NSArray *endHourArray;
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    CGFloat screen_width = CGRectGetWidth([UIScreen mainScreen].bounds);
-    
+- (void)addChildView
+{
     today = [[UIPickerView alloc]init];
-    today.frame = CGRectMake(10, 100, screen_width/2-20, 200);
     today.delegate = self;
     today.dataSource = self;
     today.tag = 1001;
-    [self.view addSubview:today];
+    [self addSubview:today];
     
     tomorrow = [[UIPickerView alloc]init];
-    tomorrow.frame = CGRectMake(CGRectGetMaxX(today.frame), 100, screen_width/2-20, 200);
     tomorrow.delegate = self;
     tomorrow.dataSource = self;
     tomorrow.tag = 1002;
-    [self.view addSubview:tomorrow];
+    [self addSubview:tomorrow];
     
     
     //  当前选中行
@@ -60,7 +43,16 @@
     //  设置时间选择范围
     //  选择范围要多 30 分钟
     [self getMaxMinute:nowMinute];
-    
+}
+
+
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    CGFloat screen_width = CGRectGetWidth([UIScreen mainScreen].bounds);
+    today.frame = CGRectMake(10, 100, screen_width/2-20, 200);
+    tomorrow.frame = CGRectMake(CGRectGetMaxX(today.frame), 100, screen_width/2-20, 200);
 }
 
 #pragma mark - data source
@@ -299,9 +291,9 @@
     while (tormr > 0) {
         i = i == 24 ? 0 : i;
         if (i < 10) {
-            [maxHour addObject:[NSString stringWithFormat:@"0%ld",i]];
+            [maxHour addObject:[NSString stringWithFormat:@"0%ld",(long)i]];
         }else
-            [maxHour addObject:[NSString stringWithFormat:@"%ld",i]];
+            [maxHour addObject:[NSString stringWithFormat:@"%ld",(long)i]];
         i += 1;
         tormr -= 1;
     }
@@ -412,5 +404,14 @@
     }
     return _endHourArray;
 }
+
+
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
 
 @end

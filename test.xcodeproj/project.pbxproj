@@ -8,7 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		254CFB452237995C00DC385C /* CustomChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 254CFB442237995C00DC385C /* CustomChatViewController.m */; };
-		259C3FC02270756400F6234F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 259C3FBF2270756400F6234F /* ViewController.m */; };
+		25D539DE227695C000B23BA2 /* DatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539DD227695C000B23BA2 /* DatePicker.m */; };
+		25D539E12276984D00B23BA2 /* DatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539E02276984D00B23BA2 /* DatePickerController.m */; };
+		25D539E722769C0300B23BA2 /* AlertSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539E622769C0300B23BA2 /* AlertSheetViewController.m */; };
+		25D539EA2276A6FE00B23BA2 /* StartOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539E92276A6FE00B23BA2 /* StartOption.m */; };
+		25D539ED2276A97700B23BA2 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539EC2276A97700B23BA2 /* Constant.m */; };
+		25D539F12276A9DA00B23BA2 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539F02276A9DA00B23BA2 /* UIView+Frame.m */; };
+		25D539F52276CF3300B23BA2 /* ConditionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539F42276CF3300B23BA2 /* ConditionView.m */; };
+		25D539FC227709FD00B23BA2 /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539FB227709FD00B23BA2 /* BasicView.m */; };
+		25D539FF22770A1200B23BA2 /* ClearingOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539FE22770A1200B23BA2 /* ClearingOrder.m */; };
 		8437FD2F21958225008EABE9 /* FaceRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437FD2E21958225008EABE9 /* FaceRecognitionViewController.m */; };
 		8451D72321A52E7700F05F3B /* DrivingLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451D71D21A52E7700F05F3B /* DrivingLicense.m */; };
 		8451D72421A52E7700F05F3B /* TencentIDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451D71E21A52E7700F05F3B /* TencentIDCard.m */; };
@@ -72,8 +80,25 @@
 /* Begin PBXFileReference section */
 		254CFB432237995C00DC385C /* CustomChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomChatViewController.h; sourceTree = "<group>"; };
 		254CFB442237995C00DC385C /* CustomChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomChatViewController.m; sourceTree = "<group>"; };
-		259C3FBE2270756300F6234F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		259C3FBF2270756400F6234F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		25D539DC227695C000B23BA2 /* DatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePicker.h; sourceTree = "<group>"; };
+		25D539DD227695C000B23BA2 /* DatePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePicker.m; sourceTree = "<group>"; };
+		25D539DF2276984D00B23BA2 /* DatePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerController.h; sourceTree = "<group>"; };
+		25D539E02276984D00B23BA2 /* DatePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickerController.m; sourceTree = "<group>"; };
+		25D539E522769C0300B23BA2 /* AlertSheetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertSheetViewController.h; sourceTree = "<group>"; };
+		25D539E622769C0300B23BA2 /* AlertSheetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertSheetViewController.m; sourceTree = "<group>"; };
+		25D539E82276A6FE00B23BA2 /* StartOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartOption.h; sourceTree = "<group>"; };
+		25D539E92276A6FE00B23BA2 /* StartOption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartOption.m; sourceTree = "<group>"; };
+		25D539EB2276A97700B23BA2 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		25D539EC2276A97700B23BA2 /* Constant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
+		25D539EF2276A9DA00B23BA2 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		25D539F02276A9DA00B23BA2 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		25D539F22276AA8800B23BA2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		25D539F32276CF3300B23BA2 /* ConditionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConditionView.h; sourceTree = "<group>"; };
+		25D539F42276CF3300B23BA2 /* ConditionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConditionView.m; sourceTree = "<group>"; };
+		25D539FA227709FD00B23BA2 /* BasicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicView.h; sourceTree = "<group>"; };
+		25D539FB227709FD00B23BA2 /* BasicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicView.m; sourceTree = "<group>"; };
+		25D539FD22770A1200B23BA2 /* ClearingOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearingOrder.h; sourceTree = "<group>"; };
+		25D539FE22770A1200B23BA2 /* ClearingOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClearingOrder.m; sourceTree = "<group>"; };
 		7CD906A0D14E173DF2CD3F76 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		7DEBAC627F62038F7BCFB3C7 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		8437FD2721952C4C008EABE9 /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
@@ -188,6 +213,82 @@
 			path = ChatController;
 			sourceTree = "<group>";
 		};
+		25D539D92276952400B23BA2 /* DatePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				25D539DB227695AC00B23BA2 /* view */,
+				25D539DA227695A400B23BA2 /* controller */,
+			);
+			path = DatePickerController;
+			sourceTree = "<group>";
+		};
+		25D539DA227695A400B23BA2 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				25D539DF2276984D00B23BA2 /* DatePickerController.h */,
+				25D539E02276984D00B23BA2 /* DatePickerController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		25D539DB227695AC00B23BA2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				25D539DC227695C000B23BA2 /* DatePicker.h */,
+				25D539DD227695C000B23BA2 /* DatePicker.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		25D539E222769BAA00B23BA2 /* AlertSheetController */ = {
+			isa = PBXGroup;
+			children = (
+				25D539E422769BDB00B23BA2 /* view */,
+				25D539E322769BCB00B23BA2 /* controller */,
+			);
+			path = AlertSheetController;
+			sourceTree = "<group>";
+		};
+		25D539E322769BCB00B23BA2 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				25D539E522769C0300B23BA2 /* AlertSheetViewController.h */,
+				25D539E622769C0300B23BA2 /* AlertSheetViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		25D539E422769BDB00B23BA2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				25D539E82276A6FE00B23BA2 /* StartOption.h */,
+				25D539E92276A6FE00B23BA2 /* StartOption.m */,
+				25D539F32276CF3300B23BA2 /* ConditionView.h */,
+				25D539F42276CF3300B23BA2 /* ConditionView.m */,
+				25D539FD22770A1200B23BA2 /* ClearingOrder.h */,
+				25D539FE22770A1200B23BA2 /* ClearingOrder.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		25D539EE2276A9CF00B23BA2 /* ViewFrame */ = {
+			isa = PBXGroup;
+			children = (
+				25D539EF2276A9DA00B23BA2 /* UIView+Frame.h */,
+				25D539F02276A9DA00B23BA2 /* UIView+Frame.m */,
+			);
+			path = ViewFrame;
+			sourceTree = "<group>";
+		};
+		25D539F9227709EE00B23BA2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				25D539FA227709FD00B23BA2 /* BasicView.h */,
+				25D539FB227709FD00B23BA2 /* BasicView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		30113B86393AE54B550491DA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +385,8 @@
 		849013532133CBB600384691 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				25D539E222769BAA00B23BA2 /* AlertSheetController */,
+				25D539D92276952400B23BA2 /* DatePickerController */,
 				254CFB3F22378CD600DC385C /* ChatController */,
 				8437FD2721952C4C008EABE9 /* test.entitlements */,
 				8497D18E21801E6300EF5EB7 /* AppDelegate */,
@@ -300,6 +403,7 @@
 				8490135D2133CBB700384691 /* Assets.xcassets */,
 				849013622133CBB700384691 /* Info.plist */,
 				849013632133CBB800384691 /* main.m */,
+				25D539F22276AA8800B23BA2 /* PrefixHeader.pch */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -325,6 +429,7 @@
 		8497D18A21801E6300EF5EB7 /* RootController */ = {
 			isa = PBXGroup;
 			children = (
+				25D539F9227709EE00B23BA2 /* view */,
 				8497D18B21801E6300EF5EB7 /* controller */,
 			);
 			path = RootController;
@@ -342,8 +447,6 @@
 		8497D18E21801E6300EF5EB7 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				259C3FBE2270756300F6234F /* ViewController.h */,
-				259C3FBF2270756400F6234F /* ViewController.m */,
 				8497D18F21801E6300EF5EB7 /* AppDelegate.h */,
 				8497D19021801E6300EF5EB7 /* AppDelegate.m */,
 				84F47A9621EDDAE2009CBFE9 /* Main.storyboard */,
@@ -388,11 +491,14 @@
 		8497D19E21801E6300EF5EB7 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				25D539EE2276A9CF00B23BA2 /* ViewFrame */,
 				84F49AB0219D77880043850A /* NSString+Crypto.h */,
 				84F49AB1219D77880043850A /* NSString+Crypto.m */,
-				8497D19F21801E6300EF5EB7 /* CommonUtility.m */,
 				8497D1A021801E6300EF5EB7 /* ConstHeader.h */,
 				8497D1A121801E6300EF5EB7 /* CommonUtility.h */,
+				8497D19F21801E6300EF5EB7 /* CommonUtility.m */,
+				25D539EB2276A97700B23BA2 /* Constant.h */,
+				25D539EC2276A97700B23BA2 /* Constant.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -530,7 +636,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = Tima;
+				ORGANIZATIONNAME = T_T;
 				TargetAttributes = {
 					849013502133CBB600384691 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -680,17 +786,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F49AB2219D77880043850A /* NSString+Crypto.m in Sources */,
+				25D539F12276A9DA00B23BA2 /* UIView+Frame.m in Sources */,
 				8497D1A221801E6300EF5EB7 /* RootViewController.m in Sources */,
 				849013642133CBB800384691 /* main.m in Sources */,
 				8497D1A521801E6300EF5EB7 /* LineDashPolyline.m in Sources */,
 				8451D72321A52E7700F05F3B /* DrivingLicense.m in Sources */,
 				8451D72A21A52E9100F05F3B /* FaceIdCard.m in Sources */,
-				259C3FC02270756400F6234F /* ViewController.m in Sources */,
 				84F47A5721EDC88C009CBFE9 /* CustomKeyboardView.m in Sources */,
 				84F49AAA219D661D0043850A /* DriversLicenseController.m in Sources */,
+				25D539E12276984D00B23BA2 /* DatePickerController.m in Sources */,
 				84F49AAD219D66F20043850A /* FaceController.m in Sources */,
 				8437FD2F21958225008EABE9 /* FaceRecognitionViewController.m in Sources */,
+				25D539F52276CF3300B23BA2 /* ConditionView.m in Sources */,
 				8497D1AD21801E9F00EF5EB7 /* MainViewController.m in Sources */,
+				25D539DE227695C000B23BA2 /* DatePicker.m in Sources */,
+				25D539ED2276A97700B23BA2 /* Constant.m in Sources */,
+				25D539E722769C0300B23BA2 /* AlertSheetViewController.m in Sources */,
 				8497D1A721801E6300EF5EB7 /* MANaviPolyline.m in Sources */,
 				254CFB452237995C00DC385C /* CustomChatViewController.m in Sources */,
 				8451D72421A52E7700F05F3B /* TencentIDCard.m in Sources */,
@@ -699,10 +810,13 @@
 				8497D1A821801E6300EF5EB7 /* MANaviAnnotation.m in Sources */,
 				8497D1A621801E6300EF5EB7 /* MANaviRoute.m in Sources */,
 				84C9C3E6219E8A6A00EAFB54 /* BluetoochViewController.m in Sources */,
+				25D539FF22770A1200B23BA2 /* ClearingOrder.m in Sources */,
 				8497D1A921801E6300EF5EB7 /* CommonUtility.m in Sources */,
 				849522B521A5489800A22BF5 /* VideoAndLipLanguage.m in Sources */,
 				8497D1A321801E6300EF5EB7 /* AppDelegate.m in Sources */,
+				25D539FC227709FD00B23BA2 /* BasicView.m in Sources */,
 				8497D1A421801E6300EF5EB7 /* MapViewController.m in Sources */,
+				25D539EA2276A6FE00B23BA2 /* StartOption.m in Sources */,
 				84C9C3ED219EBA6A00EAFB54 /* TencentRecognitionViewController.m in Sources */,
 				84F49AA7219D657F0043850A /* IDCard.m in Sources */,
 			);
@@ -858,8 +972,10 @@
 				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5UT3333NGY;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -879,8 +995,10 @@
 				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
