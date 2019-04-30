@@ -67,7 +67,7 @@
                 return self.dayArray.count;
                 break;
             case 1:
-                return self.hourArray.count;
+                return self.hourArray.count-2;
                 break;
             case 2:
                 return self.minuteArray.count;
@@ -364,6 +364,7 @@
         count = 2;
         h += 1;
     }
+    NSLog(@"选中时间:%ld   总共:%ld",h,self.hourArray.count);
     //  时间的范围
     for (int i=0; i<count; i++) {
         //  终止时间在数组中的位置

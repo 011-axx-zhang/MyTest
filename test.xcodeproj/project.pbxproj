@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		254CFB452237995C00DC385C /* CustomChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 254CFB442237995C00DC385C /* CustomChatViewController.m */; };
+		2560D87822784AEE00E8BFE3 /* UIView+TargetAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2560D87622784AEE00E8BFE3 /* UIView+TargetAction.m */; };
+		2560D87B227851C700E8BFE3 /* PeopleNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2560D87A227851C700E8BFE3 /* PeopleNumberViewController.m */; };
 		25D539DE227695C000B23BA2 /* DatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539DD227695C000B23BA2 /* DatePicker.m */; };
 		25D539E12276984D00B23BA2 /* DatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539E02276984D00B23BA2 /* DatePickerController.m */; };
 		25D539E722769C0300B23BA2 /* AlertSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539E622769C0300B23BA2 /* AlertSheetViewController.m */; };
@@ -80,6 +82,10 @@
 /* Begin PBXFileReference section */
 		254CFB432237995C00DC385C /* CustomChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomChatViewController.h; sourceTree = "<group>"; };
 		254CFB442237995C00DC385C /* CustomChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomChatViewController.m; sourceTree = "<group>"; };
+		2560D87622784AEE00E8BFE3 /* UIView+TargetAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TargetAction.m"; sourceTree = "<group>"; };
+		2560D87722784AEE00E8BFE3 /* UIView+TargetAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TargetAction.h"; sourceTree = "<group>"; };
+		2560D879227851C700E8BFE3 /* PeopleNumberViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeopleNumberViewController.h; sourceTree = "<group>"; };
+		2560D87A227851C700E8BFE3 /* PeopleNumberViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeopleNumberViewController.m; sourceTree = "<group>"; };
 		25D539DC227695C000B23BA2 /* DatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePicker.h; sourceTree = "<group>"; };
 		25D539DD227695C000B23BA2 /* DatePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePicker.m; sourceTree = "<group>"; };
 		25D539DF2276984D00B23BA2 /* DatePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerController.h; sourceTree = "<group>"; };
@@ -254,6 +260,8 @@
 			children = (
 				25D539E522769C0300B23BA2 /* AlertSheetViewController.h */,
 				25D539E622769C0300B23BA2 /* AlertSheetViewController.m */,
+				2560D879227851C700E8BFE3 /* PeopleNumberViewController.h */,
+				2560D87A227851C700E8BFE3 /* PeopleNumberViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -491,6 +499,8 @@
 		8497D19E21801E6300EF5EB7 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				2560D87722784AEE00E8BFE3 /* UIView+TargetAction.h */,
+				2560D87622784AEE00E8BFE3 /* UIView+TargetAction.m */,
 				25D539EE2276A9CF00B23BA2 /* ViewFrame */,
 				84F49AB0219D77880043850A /* NSString+Crypto.h */,
 				84F49AB1219D77880043850A /* NSString+Crypto.m */,
@@ -801,6 +811,7 @@
 				8497D1AD21801E9F00EF5EB7 /* MainViewController.m in Sources */,
 				25D539DE227695C000B23BA2 /* DatePicker.m in Sources */,
 				25D539ED2276A97700B23BA2 /* Constant.m in Sources */,
+				2560D87B227851C700E8BFE3 /* PeopleNumberViewController.m in Sources */,
 				25D539E722769C0300B23BA2 /* AlertSheetViewController.m in Sources */,
 				8497D1A721801E6300EF5EB7 /* MANaviPolyline.m in Sources */,
 				254CFB452237995C00DC385C /* CustomChatViewController.m in Sources */,
@@ -815,6 +826,7 @@
 				849522B521A5489800A22BF5 /* VideoAndLipLanguage.m in Sources */,
 				8497D1A321801E6300EF5EB7 /* AppDelegate.m in Sources */,
 				25D539FC227709FD00B23BA2 /* BasicView.m in Sources */,
+				2560D87822784AEE00E8BFE3 /* UIView+TargetAction.m in Sources */,
 				8497D1A421801E6300EF5EB7 /* MapViewController.m in Sources */,
 				25D539EA2276A6FE00B23BA2 /* StartOption.m in Sources */,
 				84C9C3ED219EBA6A00EAFB54 /* TencentRecognitionViewController.m in Sources */,
@@ -972,8 +984,8 @@
 				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5UT3333NGY;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = test/PrefixHeader.pch;
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -995,8 +1007,8 @@
 				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = test/PrefixHeader.pch;
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (

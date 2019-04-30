@@ -10,18 +10,6 @@
 
 @implementation ConditionView
 
-//- (instancetype)initWithFrame:(CGRect)frame viewType:(OptionViewType)type otherImages:(nullable NSArray *)images
-//{
-//    self = [super initWithFrame:frame];
-//    if (self) {
-//        self.type = type;
-//        if (images) {
-//            self.icons = images;
-//        }
-//        [self addChildView];
-//    }
-//    return self;
-//}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -49,7 +37,6 @@
     
     iconsView = [[NSMutableArray alloc]init];
     for (int i=0; i<3; i++) {
-//        UIImage *img = [UIImage imageNamed:self.icons[i]];
         UIImageView *icon = [[UIImageView alloc]init];
         icon.hidden = YES;
         [self addSubview:icon];

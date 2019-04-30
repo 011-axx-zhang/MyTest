@@ -18,11 +18,18 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self addNavView];
+    
+    
+    [self addChildView];
 }
 
 - (void)addNavView
 {
     //
+}
+- (void)addChildView
+{
+    
 }
 
 @end

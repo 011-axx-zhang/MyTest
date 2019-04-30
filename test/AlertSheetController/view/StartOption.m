@@ -24,6 +24,7 @@
 {
     people = [[ConditionView alloc]init];
     [self addSubview:people];
+    [people addTarget:self action:@selector(presentSubView)];
     
     time = [[ConditionView alloc]init];
     [self addSubview:time];
@@ -67,6 +68,23 @@
     NSLog(@"select done");
     if ([self.delegate respondsToSelector:@selector(optionView:didSelectOption:)]) {
         [self.delegate optionView:self didSelectOption:@{@"key":@"value"}];
+    }
+}
+
+
+- (void)presentSubView
+{
+    NSLog(@"选择人数");
+    UIResponder *responder = self;
+    UIViewController *vc = nil;
+    // 循环获取下一个响应者,直到响应者是一个UIViewController类的一个对象为止,然后返回该对象.
+    while ((responder = [responder nextResponder])) {
+        if ([responder isKindOfClass:[UIViewController class]] && ![responder isKindOfClass:[UINavigationController class]]) {
+            vc = (UIViewController *)responder;
+            NSLog(@"控制器:%@",vc);
+            UIViewController *controller = [[NSClassFromString(@"PeopleNumberViewController") alloc] init];
+            [vc presentViewController:controller animated:YES completion:nil];
+        }
     }
 }
 

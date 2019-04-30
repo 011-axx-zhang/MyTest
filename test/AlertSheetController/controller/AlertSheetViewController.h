@@ -8,12 +8,14 @@
 
 #import "RootViewController.h"
 #import "StartOption.h"
+#import "ClearingOrder.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AlertSheetViewController : RootViewController<StartOptionDelegate>
 {
     StartOption *optionsView;
+    ClearingOrder *orderView;
 }
 
 @end
