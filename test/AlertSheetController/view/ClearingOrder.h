@@ -11,6 +11,7 @@
 @class ClearingOrder;
 @protocol ClearingOrderDelegate <NSObject>
 
+- (void)clickCostInfo;
 - (void)didSelectPayButton;
 
 @end
@@ -24,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
     UIView      *line;
     
     UILabel     *tripMode;      //  出行方式
-    UILabel     *orderNumb;     //  价格
+    InfoButton  *orderNumb;     //  价格
     UILabel     *gift;          //  红包
     UILabel     *giftNumb;      //  可用红包
     UILabel     *totalNumb;     //  总价

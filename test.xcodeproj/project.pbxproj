@@ -10,6 +10,11 @@
 		254CFB452237995C00DC385C /* CustomChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 254CFB442237995C00DC385C /* CustomChatViewController.m */; };
 		2560D87822784AEE00E8BFE3 /* UIView+TargetAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2560D87622784AEE00E8BFE3 /* UIView+TargetAction.m */; };
 		2560D87B227851C700E8BFE3 /* PeopleNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2560D87A227851C700E8BFE3 /* PeopleNumberViewController.m */; };
+		257CE450227E80220020A9BE /* SpecialRequirement.m in Sources */ = {isa = PBXBuildFile; fileRef = 257CE44F227E80220020A9BE /* SpecialRequirement.m */; };
+		257CE453227E81110020A9BE /* RequirementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 257CE452227E81110020A9BE /* RequirementView.m */; };
+		257CE456227E92410020A9BE /* TaxiFareEstimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 257CE455227E92410020A9BE /* TaxiFareEstimate.m */; };
+		257CE45C227EBF240020A9BE /* UIButton+InfoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 257CE45B227EBF240020A9BE /* UIButton+InfoButton.m */; };
+		257CE45F227EBF440020A9BE /* InfoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 257CE45E227EBF440020A9BE /* InfoButton.m */; };
 		25D539DE227695C000B23BA2 /* DatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539DD227695C000B23BA2 /* DatePicker.m */; };
 		25D539E12276984D00B23BA2 /* DatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539E02276984D00B23BA2 /* DatePickerController.m */; };
 		25D539E722769C0300B23BA2 /* AlertSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539E622769C0300B23BA2 /* AlertSheetViewController.m */; };
@@ -86,6 +91,16 @@
 		2560D87722784AEE00E8BFE3 /* UIView+TargetAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TargetAction.h"; sourceTree = "<group>"; };
 		2560D879227851C700E8BFE3 /* PeopleNumberViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeopleNumberViewController.h; sourceTree = "<group>"; };
 		2560D87A227851C700E8BFE3 /* PeopleNumberViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeopleNumberViewController.m; sourceTree = "<group>"; };
+		257CE44E227E80220020A9BE /* SpecialRequirement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecialRequirement.h; sourceTree = "<group>"; };
+		257CE44F227E80220020A9BE /* SpecialRequirement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpecialRequirement.m; sourceTree = "<group>"; };
+		257CE451227E81110020A9BE /* RequirementView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequirementView.h; sourceTree = "<group>"; };
+		257CE452227E81110020A9BE /* RequirementView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequirementView.m; sourceTree = "<group>"; };
+		257CE454227E92410020A9BE /* TaxiFareEstimate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaxiFareEstimate.h; sourceTree = "<group>"; };
+		257CE455227E92410020A9BE /* TaxiFareEstimate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaxiFareEstimate.m; sourceTree = "<group>"; };
+		257CE45A227EBF240020A9BE /* UIButton+InfoButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+InfoButton.h"; sourceTree = "<group>"; };
+		257CE45B227EBF240020A9BE /* UIButton+InfoButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+InfoButton.m"; sourceTree = "<group>"; };
+		257CE45D227EBF440020A9BE /* InfoButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoButton.h; sourceTree = "<group>"; };
+		257CE45E227EBF440020A9BE /* InfoButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoButton.m; sourceTree = "<group>"; };
 		25D539DC227695C000B23BA2 /* DatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePicker.h; sourceTree = "<group>"; };
 		25D539DD227695C000B23BA2 /* DatePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePicker.m; sourceTree = "<group>"; };
 		25D539DF2276984D00B23BA2 /* DatePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerController.h; sourceTree = "<group>"; };
@@ -219,6 +234,17 @@
 			path = ChatController;
 			sourceTree = "<group>";
 		};
+		257CE457227EBEA00020A9BE /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				257CE45A227EBF240020A9BE /* UIButton+InfoButton.h */,
+				257CE45B227EBF240020A9BE /* UIButton+InfoButton.m */,
+				257CE45D227EBF440020A9BE /* InfoButton.h */,
+				257CE45E227EBF440020A9BE /* InfoButton.m */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		25D539D92276952400B23BA2 /* DatePickerController */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +288,10 @@
 				25D539E622769C0300B23BA2 /* AlertSheetViewController.m */,
 				2560D879227851C700E8BFE3 /* PeopleNumberViewController.h */,
 				2560D87A227851C700E8BFE3 /* PeopleNumberViewController.m */,
+				257CE44E227E80220020A9BE /* SpecialRequirement.h */,
+				257CE44F227E80220020A9BE /* SpecialRequirement.m */,
+				257CE454227E92410020A9BE /* TaxiFareEstimate.h */,
+				257CE455227E92410020A9BE /* TaxiFareEstimate.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -275,6 +305,8 @@
 				25D539F42276CF3300B23BA2 /* ConditionView.m */,
 				25D539FD22770A1200B23BA2 /* ClearingOrder.h */,
 				25D539FE22770A1200B23BA2 /* ClearingOrder.m */,
+				257CE451227E81110020A9BE /* RequirementView.h */,
+				257CE452227E81110020A9BE /* RequirementView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -499,6 +531,7 @@
 		8497D19E21801E6300EF5EB7 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				257CE457227EBEA00020A9BE /* Button */,
 				2560D87722784AEE00E8BFE3 /* UIView+TargetAction.h */,
 				2560D87622784AEE00E8BFE3 /* UIView+TargetAction.m */,
 				25D539EE2276A9CF00B23BA2 /* ViewFrame */,
@@ -797,6 +830,7 @@
 			files = (
 				84F49AB2219D77880043850A /* NSString+Crypto.m in Sources */,
 				25D539F12276A9DA00B23BA2 /* UIView+Frame.m in Sources */,
+				257CE453227E81110020A9BE /* RequirementView.m in Sources */,
 				8497D1A221801E6300EF5EB7 /* RootViewController.m in Sources */,
 				849013642133CBB800384691 /* main.m in Sources */,
 				8497D1A521801E6300EF5EB7 /* LineDashPolyline.m in Sources */,
@@ -805,21 +839,25 @@
 				84F47A5721EDC88C009CBFE9 /* CustomKeyboardView.m in Sources */,
 				84F49AAA219D661D0043850A /* DriversLicenseController.m in Sources */,
 				25D539E12276984D00B23BA2 /* DatePickerController.m in Sources */,
+				257CE456227E92410020A9BE /* TaxiFareEstimate.m in Sources */,
 				84F49AAD219D66F20043850A /* FaceController.m in Sources */,
 				8437FD2F21958225008EABE9 /* FaceRecognitionViewController.m in Sources */,
 				25D539F52276CF3300B23BA2 /* ConditionView.m in Sources */,
 				8497D1AD21801E9F00EF5EB7 /* MainViewController.m in Sources */,
 				25D539DE227695C000B23BA2 /* DatePicker.m in Sources */,
 				25D539ED2276A97700B23BA2 /* Constant.m in Sources */,
+				257CE45F227EBF440020A9BE /* InfoButton.m in Sources */,
 				2560D87B227851C700E8BFE3 /* PeopleNumberViewController.m in Sources */,
 				25D539E722769C0300B23BA2 /* AlertSheetViewController.m in Sources */,
 				8497D1A721801E6300EF5EB7 /* MANaviPolyline.m in Sources */,
+				257CE45C227EBF240020A9BE /* UIButton+InfoButton.m in Sources */,
 				254CFB452237995C00DC385C /* CustomChatViewController.m in Sources */,
 				8451D72421A52E7700F05F3B /* TencentIDCard.m in Sources */,
 				84C8F877219956F500596DC0 /* VehicleRouteController.m in Sources */,
 				84F47A5421EDB3F2009CBFE9 /* CustomKeyboardController.m in Sources */,
 				8497D1A821801E6300EF5EB7 /* MANaviAnnotation.m in Sources */,
 				8497D1A621801E6300EF5EB7 /* MANaviRoute.m in Sources */,
+				257CE450227E80220020A9BE /* SpecialRequirement.m in Sources */,
 				84C9C3E6219E8A6A00EAFB54 /* BluetoochViewController.m in Sources */,
 				25D539FF22770A1200B23BA2 /* ClearingOrder.m in Sources */,
 				8497D1A921801E6300EF5EB7 /* CommonUtility.m in Sources */,

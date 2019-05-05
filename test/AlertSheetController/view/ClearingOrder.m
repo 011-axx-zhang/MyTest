@@ -30,10 +30,11 @@
     tripMode.font = [UIFont systemFontOfSize:12];
     tripMode.textColor = [UIColor colorWithRed:102/255.0 green:102/255.0 blue:102/255.0 alpha:1.0];
     
-    orderNumb = [[UILabel alloc]init];
-    orderNumb.font = [UIFont boldSystemFontOfSize:14];
-    orderNumb.textColor = [UIColor blackColor];
-    orderNumb.textAlignment = NSTextAlignmentRight;
+    orderNumb = [[InfoButton alloc]init];
+    orderNumb.titleLabel.font = [UIFont boldSystemFontOfSize:14];
+    [orderNumb setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [orderNumb setImage:[UIImage imageNamed:@"ButtonInfoImage"] forState:UIControlStateNormal];
+    [orderNumb addTarget:self action:@selector(costInfo) forControlEvents:UIControlEventTouchUpInside];
     
     gift = [[UILabel alloc]init];
     gift.font = [UIFont systemFontOfSize:12];
@@ -107,13 +108,13 @@
     
     line.frame = CGRectMake(0, 170, self.width, 20);
     line.backgroundColor = [UIColor brownColor];
-//    line.backgroundColor = [UIColor colorWithRed:245 green:245 blue:245 alpha:1];
     
     tripMode.frame = CGRectMake(35, 210, 87, 17);
     tripMode.text = @"顺风车+出租车";
     
-    orderNumb.frame = CGRectMake(self.width-35-100, 210, 100, 20);
-    orderNumb.text = @"99.9元";
+    CGFloat btnw = 80;
+    orderNumb.frame = CGRectMake(self.width-10-btnw, 210, btnw, 20);
+    [orderNumb setTitle:@"99.9元" forState:UIControlStateNormal];
     
     gift.frame = CGRectMake(35, 230, 87, 17);
     gift.text = @"给司机小红包";
@@ -146,6 +147,13 @@
 {
     if ([self.delegate respondsToSelector:@selector(didSelectPayButton)]) {
         [self.delegate didSelectPayButton];
+    }
+}
+
+- (void)costInfo
+{
+    if ([self.delegate respondsToSelector:@selector(clickCostInfo)]) {
+        [self.delegate clickCostInfo];
     }
 }
 

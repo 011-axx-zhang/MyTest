@@ -31,6 +31,7 @@
     
     other = [[ConditionView alloc]init];
     [self addSubview:other];
+    [other addTarget:self action:@selector(otherOptions)];
     
     done = [UIButton buttonWithType:UIButtonTypeCustom];
     [done setTitle:@"确认发布" forState:UIControlStateNormal];
@@ -87,6 +88,22 @@
         }
     }
 }
+
+- (void)otherOptions
+{
+    UIResponder *responder = self;
+    UIViewController *vc = nil;
+    // 循环获取下一个响应者,直到响应者是一个UIViewController类的一个对象为止,然后返回该对象.
+    while ((responder = [responder nextResponder])) {
+        if ([responder isKindOfClass:[UIViewController class]] && ![responder isKindOfClass:[UINavigationController class]]) {
+            vc = (UIViewController *)responder;
+//            NSLog(@"控制器:%@",vc);
+            UIViewController *controller = [[NSClassFromString(@"SpecialRequirement") alloc] init];
+            [vc presentViewController:controller animated:YES completion:nil];
+        }
+    }
+}
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

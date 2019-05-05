@@ -52,11 +52,26 @@
 
 - (void)didSelectPayButton
 {
+    NSLog(@"去支付");
     [UIView animateWithDuration:0.2 animations:^{
         self->orderView.y = SCREEN_HEIGHT;
     } completion:^(BOOL finished) {
         self->orderView.y = SCREEN_HEIGHT;
     }];
+}
+
+- (void)clickCostInfo
+{
+    NSLog(@"查看费用详情");
+    UIViewController *vc = [[NSClassFromString(@"TaxiFareEstimate") alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = NO;
 }
 
 @end
