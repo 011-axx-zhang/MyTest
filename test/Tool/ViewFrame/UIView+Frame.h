@@ -24,6 +24,14 @@ extern "C" {
 #define SCREEN_HEIGHT_2         (SCREEN_HEIGHT / 2)
 
 
+//信息条高度 iPhone X 44 , 其余20
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+//导航条高度
+#define NAVIGATIONBAR_HEIGHT        (kStatusBarHeight > 20 ? 88.0f:64.0f)
+
+#define SafeAreaTopHeight (kStatusBarHeight > 20 ? 44 : 20)
+#define SafeAreaBottomHeight (kStatusBarHeight > 20 ? 83 : 50)
+
 
 @interface UIView (Frame)
 

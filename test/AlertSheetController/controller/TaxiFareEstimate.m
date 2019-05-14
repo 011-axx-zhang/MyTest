@@ -140,6 +140,8 @@
 - (void)priceRule
 {
     NSLog(@"计价规则");
+    UIViewController *vc = [[NSClassFromString(@"PriceRuleViewController") alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)popController
 {
