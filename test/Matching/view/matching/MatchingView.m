@@ -24,6 +24,7 @@
     
     locationBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [locationBtn setBackgroundImage:[UIImage imageNamed:@"Navigation_Point_Locate"] forState:UIControlStateNormal];
+    [locationBtn addTarget:self action:@selector(clickLocation) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:locationBtn];
     
     
@@ -51,6 +52,13 @@
     DBView.frame = CGRectMake(0, simpleView.bottom+7, self.width, 100);
     
     carOwner.frame = CGRectMake(0, DBView.bottom+7, self.width, 100);
+}
+
+- (void)clickLocation
+{
+    if ([self.delegate respondsToSelector:@selector(didClickLocationActive)]) {
+        [self.delegate didClickLocationActive];
+    }
 }
 
 @end

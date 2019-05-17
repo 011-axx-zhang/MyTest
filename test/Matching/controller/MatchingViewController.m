@@ -28,6 +28,7 @@ static CGFloat const RoutelHeight = 324.0f;
 {
     matchInfo = [[MatchingView alloc]initWithFrame:CGRectMake(15, SCREEN_HEIGHT-500, SCREEN_WIDTH-30, 500)];
     matchInfo.backgroundColor = [UIColor whiteColor];
+    matchInfo.delegate = self;
     [self.view addSubview:matchInfo];
     
     UIPanGestureRecognizer *gesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(didDragView:)];
@@ -99,6 +100,18 @@ static CGFloat const RoutelHeight = 324.0f;
 - (void)didClickChangeInDemandButton
 {
     NSLog(@"提示修改特殊需求");
+}
+
+- (void)didClickLocationActive
+{
+    /*  颜色匹配
+    MatchingColorSettingViewController *colorVC = [[MatchingColorSettingViewController alloc]init];
+    [self.navigationController pushViewController:colorVC animated:YES];
+     */
+    OrderPayViewController *orderVC = [[OrderPayViewController alloc]init];
+    orderVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    orderVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:orderVC animated:YES completion:nil];
 }
 
 #pragma mark - view method

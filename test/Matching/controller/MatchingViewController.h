@@ -10,10 +10,12 @@
 #import "MatchingView.h"
 #import "RouteInfoView.h"
 #import "MatchingMoreOptionsController.h"
+#import "MatchingColorSettingViewController.h"
+#import "OrderPayViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MatchingViewController : RootViewController<RouteInfoViewDelegate,MatchingAlertDelegate>
+@interface MatchingViewController : RootViewController<RouteInfoViewDelegate,MatchingAlertDelegate,MatchingViewDelegate>
 {
     MatchingView *matchInfo;
     RouteInfoView *routeView;

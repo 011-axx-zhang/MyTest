@@ -13,6 +13,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol MatchingViewDelegate <NSObject>
+
+- (void)didClickLocationActive;
+
+@end
+
 @interface MatchingView : BasicView
 {
     UIButton *safeBtn;
@@ -22,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
     WISimpleQuestionView *simpleView;   //  询问框
     WIPassengerTagView      *carOwner;  //  顺风车车主
 }
+
+@property (nonatomic, assign) id <MatchingViewDelegate> delegate;
 
 @end
 

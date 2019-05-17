@@ -11,7 +11,7 @@
 @class RouteInfoView;
 @protocol RouteInfoViewDelegate <NSObject>
 
-- (void)didClickPullUPAction:(RouteInfoView *)view;
+- (void)didClickPullUPAction:( RouteInfoView * _Nullable )view;
 
 @end
 NS_ASSUME_NONNULL_BEGIN
