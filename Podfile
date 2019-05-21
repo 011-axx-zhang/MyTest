@@ -16,7 +16,8 @@ pod 'AFNetworking', 	    '~> 3.2.1'
 pod 'TXIMSDK_iOS',		'~> 4.0.2'
 pod 'TXIMSDK_TUIKit_iOS', 	'~> 4.0.12'
 
-
+###	动画
+pod 'pop', '~> 1.0.12'
 
 
 

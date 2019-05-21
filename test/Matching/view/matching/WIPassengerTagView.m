@@ -47,16 +47,17 @@
         UIButton *item = [UIButton buttonWithType:UIButtonTypeCustom];
         item.hidden = YES;
         item.titleLabel.font = [UIFont systemFontOfSize:8];
+        item.layer.cornerRadius = 8.5;
+        item.layer.borderColor = kBlackColor.CGColor;
+        item.layer.borderWidth = 1.0f;
         [item setTitle:itemStr[i] forState:UIControlStateNormal];
         [item setTitleColor:[UIColor colorWithString:@"#666666"] forState:UIControlStateNormal];
-        [item setBackgroundColor:[UIColor grayColor]];
         [self addSubview:item];
         [tags addObject:item];
     }
     
     peopleNum = [[UILabel alloc]init];
-    peopleNum.textColor = kWhiteColor;
-    peopleNum.backgroundColor = kBlueColor;
+    peopleNum.textColor = [UIColor colorWithString:@"#666666"];
     peopleNum.font = [UIFont systemFontOfSize:10];
     peopleNum.textAlignment = NSTextAlignmentCenter;
     peopleNum.text = @"上海强生出租汽车有限公司";

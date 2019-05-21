@@ -13,9 +13,11 @@
 
 - (void)addChildView
 {
+    self.backgroundColor = [UIColor clearColor];
     safeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     safeBtn.backgroundColor = [UIColor whiteColor];
     safeBtn.titleLabel.font = [UIFont systemFontOfSize:12];
+    safeBtn.layer.cornerRadius = 15;
     [safeBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [safeBtn setImage:[UIImage imageNamed:@"Match_Child_Safe"] forState:UIControlStateNormal];
     [safeBtn setImageEdgeInsets:UIEdgeInsetsMake(0, -5, 0, 5)];

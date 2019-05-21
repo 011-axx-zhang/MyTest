@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		250BCE31227FD5150002DDD8 /* RuleIFirsItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250BCE30227FD5150002DDD8 /* RuleIFirsItemController.m */; };
 		250BCE3422801E1E0002DDD8 /* RuleSecondItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250BCE3322801E1E0002DDD8 /* RuleSecondItemController.m */; };
-		251066F8228D3DCA00E944BF /* MatchingColorSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251066F6228D3DCA00E944BF /* MatchingColorSettingViewController.m */; };
 		251066FB228D470700E944BF /* OrderPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251066FA228D470700E944BF /* OrderPayViewController.m */; };
 		251066FF228D4AF600E944BF /* PaySelectPayTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 251066FE228D4AF600E944BF /* PaySelectPayTypeView.m */; };
 		25106702228D609400E944BF /* PayFailureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25106701228D609400E944BF /* PayFailureView.m */; };
 		25106705228D6CC500E944BF /* PayReconfirmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25106704228D6CC500E944BF /* PayReconfirmView.m */; };
 		25106708228D81EB00E944BF /* PayFinishAppraiseOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 25106707228D81EB00E944BF /* PayFinishAppraiseOrder.m */; };
+		251BF89D22924F34003AE014 /* MatchingColorSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BF89B22924F34003AE014 /* MatchingColorSettingViewController.m */; };
 		254CFB452237995C00DC385C /* CustomChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 254CFB442237995C00DC385C /* CustomChatViewController.m */; };
 		254E3BAD22894CFE00205713 /* MatchingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 254E3BAC22894CFE00205713 /* MatchingViewController.m */; };
 		254E3BB022894D0C00205713 /* MatchingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 254E3BAF22894D0C00205713 /* MatchingView.m */; };
@@ -109,8 +109,6 @@
 		250BCE30227FD5150002DDD8 /* RuleIFirsItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuleIFirsItemController.m; sourceTree = "<group>"; };
 		250BCE3222801E1E0002DDD8 /* RuleSecondItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuleSecondItemController.h; sourceTree = "<group>"; };
 		250BCE3322801E1E0002DDD8 /* RuleSecondItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuleSecondItemController.m; sourceTree = "<group>"; };
-		251066F6228D3DCA00E944BF /* MatchingColorSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchingColorSettingViewController.m; sourceTree = "<group>"; };
-		251066F7228D3DCA00E944BF /* MatchingColorSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchingColorSettingViewController.h; sourceTree = "<group>"; };
 		251066F9228D470700E944BF /* OrderPayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderPayViewController.h; sourceTree = "<group>"; };
 		251066FA228D470700E944BF /* OrderPayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderPayViewController.m; sourceTree = "<group>"; };
 		251066FD228D4AF600E944BF /* PaySelectPayTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaySelectPayTypeView.h; sourceTree = "<group>"; };
@@ -121,6 +119,8 @@
 		25106704228D6CC500E944BF /* PayReconfirmView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayReconfirmView.m; sourceTree = "<group>"; };
 		25106706228D81EB00E944BF /* PayFinishAppraiseOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayFinishAppraiseOrder.h; sourceTree = "<group>"; };
 		25106707228D81EB00E944BF /* PayFinishAppraiseOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayFinishAppraiseOrder.m; sourceTree = "<group>"; };
+		251BF89B22924F34003AE014 /* MatchingColorSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchingColorSettingViewController.m; sourceTree = "<group>"; };
+		251BF89C22924F34003AE014 /* MatchingColorSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchingColorSettingViewController.h; sourceTree = "<group>"; };
 		254CFB432237995C00DC385C /* CustomChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomChatViewController.h; sourceTree = "<group>"; };
 		254CFB442237995C00DC385C /* CustomChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomChatViewController.m; sourceTree = "<group>"; };
 		254E3BAB22894CFE00205713 /* MatchingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchingViewController.h; sourceTree = "<group>"; };
@@ -337,8 +337,8 @@
 				254E3BAC22894CFE00205713 /* MatchingViewController.m */,
 				25B06412228AB22000E56277 /* MatchingMoreOptionsController.h */,
 				25B06413228AB22000E56277 /* MatchingMoreOptionsController.m */,
-				251066F7228D3DCA00E944BF /* MatchingColorSettingViewController.h */,
-				251066F6228D3DCA00E944BF /* MatchingColorSettingViewController.m */,
+				251BF89C22924F34003AE014 /* MatchingColorSettingViewController.h */,
+				251BF89B22924F34003AE014 /* MatchingColorSettingViewController.m */,
 				251066F9228D470700E944BF /* OrderPayViewController.h */,
 				251066FA228D470700E944BF /* OrderPayViewController.m */,
 			);
@@ -1005,6 +1005,7 @@
 				25B06414228AB22000E56277 /* MatchingMoreOptionsController.m in Sources */,
 				257CE456227E92410020A9BE /* TaxiFareEstimate.m in Sources */,
 				25B06411228A9F1000E56277 /* RouteInfoStyleSubview.m in Sources */,
+				251BF89D22924F34003AE014 /* MatchingColorSettingViewController.m in Sources */,
 				84F49AAD219D66F20043850A /* FaceController.m in Sources */,
 				251066FF228D4AF600E944BF /* PaySelectPayTypeView.m in Sources */,
 				8437FD2F21958225008EABE9 /* FaceRecognitionViewController.m in Sources */,
@@ -1021,7 +1022,6 @@
 				257CE45C227EBF240020A9BE /* UIButton+InfoButton.m in Sources */,
 				25106702228D609400E944BF /* PayFailureView.m in Sources */,
 				250BCE31227FD5150002DDD8 /* RuleIFirsItemController.m in Sources */,
-				251066F8228D3DCA00E944BF /* MatchingColorSettingViewController.m in Sources */,
 				254CFB452237995C00DC385C /* CustomChatViewController.m in Sources */,
 				8451D72421A52E7700F05F3B /* TencentIDCard.m in Sources */,
 				84C8F877219956F500596DC0 /* VehicleRouteController.m in Sources */,
