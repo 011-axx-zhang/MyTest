@@ -58,7 +58,7 @@
     
     MAPolyline *polyline = [MAPolyline polylineWithCoordinates:coordinates count:count];
     
-    free(coordinates), coordinates = NULL;
+    (void)(free(coordinates)), coordinates = NULL;
     
     return polyline;
 }
@@ -119,7 +119,7 @@
     
     mapRect = [self mapRectUnion:buffer count:overlays.count];
     
-    free(buffer), buffer = NULL;
+    (void)(free(buffer)), buffer = NULL;
     
     return mapRect;
 }
@@ -181,7 +181,7 @@
     
     MAMapRect minMapRect = [self minMapRectForMapPoints:mapPoints count:annotations.count];
     
-    free(mapPoints), mapPoints = NULL;
+    (void)(free(mapPoints)), mapPoints = NULL;
     
     return minMapRect;
 }

@@ -15,6 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RootViewController : UIViewController
 
+- (void)addNavView;
+
+- (void)addChildView;
+
 @end
 
 NS_ASSUME_NONNULL_END

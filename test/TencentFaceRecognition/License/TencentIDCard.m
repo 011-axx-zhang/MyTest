@@ -54,7 +54,7 @@
 
 - (void)imageToBase64Str
 {
-    NSData *smallData = UIImageJPEGRepresentation(picture.image, 1);
+//    NSData *smallData = UIImageJPEGRepresentation(picture.image, 1);
     
 //    baseStr = [smallData base64EncodedStringWithOptions:0];
 }

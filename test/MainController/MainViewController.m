@@ -12,6 +12,9 @@
 #import "FaceRecognitionViewController.h"
 #import "VehicleRouteController.h"
 #import "TencentRecognitionViewController.h"
+#import "DatePickerController.h"
+#import "AlertSheetViewController.h"
+#import "MatchingViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *optionTable;
@@ -43,7 +46,10 @@
                                     @"VehicleRouteController":@"行驶轨迹",
                                     @"TencentRecognitionViewController":@"身份验证(腾讯)",
                                     @"CustomKeyboardController":@"自定义键盘",
-                                    @"CustomChatViewController":@"聊天"
+                                    @"CustomChatViewController":@"聊天",
+                                    @"DatePickerController":@"时间弹框",
+                                    @"AlertSheetViewController":@"选项",
+                                    @"MatchingViewController":@"匹配"
                                     }];//   @"NFCViewController":@"NFC"
     [self.optionTable reloadData];
 }

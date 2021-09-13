@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  test
+//
+//  Created by 亭子 on 2019/4/29.
+//  Copyright © 2019 T_T. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef __OBJC__
+
+//  扩展
+#import "UIView+Frame.h"            //  坐标类
+#import "UIView+TargetAction.h"     //  触摸事件
+#import "ColorHeaders.h"            //  颜色类
+#import <pop/POP.h>                 //  动画
+
+
+
+#endif
+
+#endif /* PrefixHeader_pch */
