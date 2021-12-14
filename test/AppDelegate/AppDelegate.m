@@ -31,6 +31,7 @@
 //    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     NSLog(@"%s",__func__);
+    NSLog(@"%d",__LINE__);
     [AMapServices sharedServices].apiKey = AMapSDKAPPKey;
     
     /*
