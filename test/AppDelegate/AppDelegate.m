@@ -12,8 +12,6 @@
 #import <AMapNaviKit/AMapNaviKit.h>
 #import <AMapSearchKit/AMapSearchKit.h>
 #import <AMapLocationKit/AMapLocationKit.h>
-#import <ImSDK/ImSDK.h>
-#import <TUIKit/TUIKit.h>
 
 #import "ConstHeader.h"
 
@@ -30,9 +28,15 @@
     
 //    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    NSLog(@"%s",__func__);
-    NSLog(@"%d",__LINE__);
+    NSLog(@"%s line:%d",__func__,__LINE__);
     [AMapServices sharedServices].apiKey = AMapSDKAPPKey;
+  
+    CGFloat a = 3.485;
+    CGFloat ceilA = ceilf(a);
+    CGFloat floorA = floorf(a);
+    CGFloat roundA = roundf(a);
+    
+    NSLog(@"%lf 向上取整为%lf, 向下取整为%lf, 四舍五入为%lf", a, ceilA, floorA, roundA);
     
     /*
     NSInteger sdkAppid = 1400102901; //填入自己app的sdkAppid

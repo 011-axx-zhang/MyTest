@@ -7,6 +7,7 @@
 //
 
 #import "TencentIDCard.h"
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @interface TencentIDCard ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
@@ -63,7 +64,7 @@
 
 - (NSString *)getCode
 {
-    NSString *a = [NSString stringWithFormat:@"a=1256192072&b=&k=AKIDfFfu11tjW8czGUgVN8jBSYSPKKG7DKfp&e=[expiredTime]&t=[currentTime]&r=[rand]&f=[fileid]"];
+    NSString *a = [NSString stringWithFormat:@"a=1256192072&b=&k=YOUR_TENCENT_CLOUD_SECRET_ID&e=[expiredTime]&t=[currentTime]&r=[rand]&f=[fileid]"];
     return a;
 }
 
@@ -91,7 +92,7 @@
     [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [manager.requestSerializer setValue:@"recognition.image.myqcloud.com" forHTTPHeaderField:@"host"];
     [manager.requestSerializer setValue:@"FCHXdPTEwMDAwMzc5Jms9QUtJRGVRZDBrRU1yM2J4ZjhRckJi==" forHTTPHeaderField:@"authorization"];
-    [manager POST:urlStr parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [manager POST:urlStr parameters:params headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"response : %@",responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"Error :%@",error);

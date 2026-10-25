@@ -7,6 +7,7 @@
 //
 
 #import "DrivingLicense.h"
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @interface DrivingLicense ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *license;

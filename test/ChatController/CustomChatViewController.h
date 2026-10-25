@@ -7,12 +7,12 @@
 //
 
 #import "RootViewController.h"
-#import <TChatController.h>
+//#import <TChatController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CustomChatViewController : RootViewController
-@property (nonatomic, strong) TConversationCellData *conversation;
+//@property (nonatomic, strong) TConversationCellData *conversation;
 
 @end
 

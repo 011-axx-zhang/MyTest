@@ -86,7 +86,7 @@
                                  @"client":@"087b456c-b37e-4989-8f28-9179d498fd0c",
                                  @"password":[pwd MD5PwdEncryption]};
     
-    [manager POST:URL parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+    [manager POST:URL parameters:parameters headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
                 NSLog(@"验证数据:%@",responseObject);

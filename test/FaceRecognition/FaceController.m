@@ -114,7 +114,7 @@
                                  @"photo1":baseStr2};
     
     //    NSLog(@"开始验证:%@",parameters);
-    [manager POST:URL parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+    [manager POST:URL parameters:parameters headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
                 NSLog(@"验证数据:%@",responseObject);

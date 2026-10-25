@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		25106705228D6CC500E944BF /* PayReconfirmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25106704228D6CC500E944BF /* PayReconfirmView.m */; };
 		25106708228D81EB00E944BF /* PayFinishAppraiseOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 25106707228D81EB00E944BF /* PayFinishAppraiseOrder.m */; };
 		251BF89D22924F34003AE014 /* MatchingColorSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251BF89B22924F34003AE014 /* MatchingColorSettingViewController.m */; };
+		2536FD002849CD5C000A0F24 /* CommonTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2536FCFF2849CD5C000A0F24 /* CommonTestViewController.m */; };
 		254CFB452237995C00DC385C /* CustomChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 254CFB442237995C00DC385C /* CustomChatViewController.m */; };
 		254E3BAD22894CFE00205713 /* MatchingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 254E3BAC22894CFE00205713 /* MatchingViewController.m */; };
 		254E3BB022894D0C00205713 /* MatchingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 254E3BAF22894D0C00205713 /* MatchingView.m */; };
@@ -44,6 +45,9 @@
 		25D539F52276CF3300B23BA2 /* ConditionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539F42276CF3300B23BA2 /* ConditionView.m */; };
 		25D539FC227709FD00B23BA2 /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539FB227709FD00B23BA2 /* BasicView.m */; };
 		25D539FF22770A1200B23BA2 /* ClearingOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D539FE22770A1200B23BA2 /* ClearingOrder.m */; };
+		25E6C99C27D5A92A009106C7 /* ShowListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E6C99B27D5A92A009106C7 /* ShowListViewController.m */; };
+		25E80BA528B62C1900961476 /* CommonTestViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E80BA428B62C1900961476 /* CommonTestViewController1.m */; };
+		25E80BA828B62C2200961476 /* CommonTestViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E80BA728B62C2200961476 /* CommonTestViewController2.m */; };
 		8437FD2F21958225008EABE9 /* FaceRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437FD2E21958225008EABE9 /* FaceRecognitionViewController.m */; };
 		8451D72321A52E7700F05F3B /* DrivingLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451D71D21A52E7700F05F3B /* DrivingLicense.m */; };
 		8451D72421A52E7700F05F3B /* TencentIDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451D71E21A52E7700F05F3B /* TencentIDCard.m */; };
@@ -121,6 +125,8 @@
 		25106707228D81EB00E944BF /* PayFinishAppraiseOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayFinishAppraiseOrder.m; sourceTree = "<group>"; };
 		251BF89B22924F34003AE014 /* MatchingColorSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchingColorSettingViewController.m; sourceTree = "<group>"; };
 		251BF89C22924F34003AE014 /* MatchingColorSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchingColorSettingViewController.h; sourceTree = "<group>"; };
+		2536FCFE2849CD5C000A0F24 /* CommonTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonTestViewController.h; sourceTree = "<group>"; };
+		2536FCFF2849CD5C000A0F24 /* CommonTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonTestViewController.m; sourceTree = "<group>"; };
 		254CFB432237995C00DC385C /* CustomChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomChatViewController.h; sourceTree = "<group>"; };
 		254CFB442237995C00DC385C /* CustomChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomChatViewController.m; sourceTree = "<group>"; };
 		254E3BAB22894CFE00205713 /* MatchingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchingViewController.h; sourceTree = "<group>"; };
@@ -182,6 +188,12 @@
 		25D539FB227709FD00B23BA2 /* BasicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicView.m; sourceTree = "<group>"; };
 		25D539FD22770A1200B23BA2 /* ClearingOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearingOrder.h; sourceTree = "<group>"; };
 		25D539FE22770A1200B23BA2 /* ClearingOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClearingOrder.m; sourceTree = "<group>"; };
+		25E6C99A27D5A92A009106C7 /* ShowListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowListViewController.h; sourceTree = "<group>"; };
+		25E6C99B27D5A92A009106C7 /* ShowListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowListViewController.m; sourceTree = "<group>"; };
+		25E80BA328B62C1900961476 /* CommonTestViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonTestViewController1.h; sourceTree = "<group>"; };
+		25E80BA428B62C1900961476 /* CommonTestViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonTestViewController1.m; sourceTree = "<group>"; };
+		25E80BA628B62C2200961476 /* CommonTestViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonTestViewController2.h; sourceTree = "<group>"; };
+		25E80BA728B62C2200961476 /* CommonTestViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonTestViewController2.m; sourceTree = "<group>"; };
 		7CD906A0D14E173DF2CD3F76 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		7DEBAC627F62038F7BCFB3C7 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		8437FD2721952C4C008EABE9 /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
@@ -300,6 +312,35 @@
 				25106707228D81EB00E944BF /* PayFinishAppraiseOrder.m */,
 			);
 			path = pay;
+			sourceTree = "<group>";
+		};
+		2511F111285F2B6C007B7F13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2536FCFC2849CD33000A0F24 /* TestClass */ = {
+			isa = PBXGroup;
+			children = (
+				2511F111285F2B6C007B7F13 /* View */,
+				2536FCFD2849CD41000A0F24 /* Controller */,
+			);
+			path = TestClass;
+			sourceTree = "<group>";
+		};
+		2536FCFD2849CD41000A0F24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2536FCFE2849CD5C000A0F24 /* CommonTestViewController.h */,
+				2536FCFF2849CD5C000A0F24 /* CommonTestViewController.m */,
+				25E80BA328B62C1900961476 /* CommonTestViewController1.h */,
+				25E80BA428B62C1900961476 /* CommonTestViewController1.m */,
+				25E80BA628B62C2200961476 /* CommonTestViewController2.h */,
+				25E80BA728B62C2200961476 /* CommonTestViewController2.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		254CFB3F22378CD600DC385C /* ChatController */ = {
@@ -487,6 +528,23 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		25E6C99827D5A8FC009106C7 /* CollectionList */ = {
+			isa = PBXGroup;
+			children = (
+				25E6C99927D5A910009106C7 /* Controller */,
+			);
+			path = CollectionList;
+			sourceTree = "<group>";
+		};
+		25E6C99927D5A910009106C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				25E6C99A27D5A92A009106C7 /* ShowListViewController.h */,
+				25E6C99B27D5A92A009106C7 /* ShowListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		30113B86393AE54B550491DA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -583,6 +641,8 @@
 		849013532133CBB600384691 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				2536FCFC2849CD33000A0F24 /* TestClass */,
+				25E6C99827D5A8FC009106C7 /* CollectionList */,
 				254E3BA822894CC700205713 /* Matching */,
 				25D539E222769BAA00B23BA2 /* AlertSheetController */,
 				25D539D92276952400B23BA2 /* DatePickerController */,
@@ -785,7 +845,6 @@
 				8490134E2133CBB600384691 /* Frameworks */,
 				8490134F2133CBB600384691 /* Resources */,
 				7D46C9549AFC04038EB915BC /* [CP] Copy Pods Resources */,
-				4A1CD9050435ED830B16332B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -838,7 +897,7 @@
 		849013492133CBB600384691 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = T_T;
 				TargetAttributes = {
 					849013502133CBB600384691 = {
@@ -919,48 +978,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4A1CD9050435ED830B16332B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-test/Pods-test-frameworks.sh",
-				"${PODS_ROOT}/TXIMSDK_TUIKit_iOS/iOS/TUIKit.framework",
-				"${PODS_ROOT}/TXIMSDK_iOS/iOS/ImSDK.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TUIKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImSDK.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test/Pods-test-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7D46C9549AFC04038EB915BC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-resources.sh",
-				"${PODS_ROOT}/AMap3DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
-				"${PODS_ROOT}/AMapNavi-NO-IDFA/AMapNaviKit.framework/AMapNavi.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test/Pods-test-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMapNavi.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test/Pods-test-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test/Pods-test-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A7CCEAC4B240D34696285172 /* [CP] Check Pods Manifest.lock */ = {
@@ -1007,6 +1039,7 @@
 				25B06411228A9F1000E56277 /* RouteInfoStyleSubview.m in Sources */,
 				251BF89D22924F34003AE014 /* MatchingColorSettingViewController.m in Sources */,
 				84F49AAD219D66F20043850A /* FaceController.m in Sources */,
+				25E80BA828B62C2200961476 /* CommonTestViewController2.m in Sources */,
 				251066FF228D4AF600E944BF /* PaySelectPayTypeView.m in Sources */,
 				8437FD2F21958225008EABE9 /* FaceRecognitionViewController.m in Sources */,
 				25D539F52276CF3300B23BA2 /* ConditionView.m in Sources */,
@@ -1027,6 +1060,7 @@
 				84C8F877219956F500596DC0 /* VehicleRouteController.m in Sources */,
 				84F47A5421EDB3F2009CBFE9 /* CustomKeyboardController.m in Sources */,
 				254E3BB922894DA200205713 /* UIColor+NSString.m in Sources */,
+				2536FD002849CD5C000A0F24 /* CommonTestViewController.m in Sources */,
 				254E3BB022894D0C00205713 /* MatchingView.m in Sources */,
 				8497D1A821801E6300EF5EB7 /* MANaviAnnotation.m in Sources */,
 				8497D1A621801E6300EF5EB7 /* MANaviRoute.m in Sources */,
@@ -1034,9 +1068,11 @@
 				257CE462227EEE500020A9BE /* PriceRuleViewController.m in Sources */,
 				254E3BBF22895BB700205713 /* WIDoubleLabelView.m in Sources */,
 				84C9C3E6219E8A6A00EAFB54 /* BluetoochViewController.m in Sources */,
+				25E80BA528B62C1900961476 /* CommonTestViewController1.m in Sources */,
 				25D539FF22770A1200B23BA2 /* ClearingOrder.m in Sources */,
 				8497D1A921801E6300EF5EB7 /* CommonUtility.m in Sources */,
 				849522B521A5489800A22BF5 /* VideoAndLipLanguage.m in Sources */,
+				25E6C99C27D5A92A009106C7 /* ShowListViewController.m in Sources */,
 				250BCE3422801E1E0002DDD8 /* RuleSecondItemController.m in Sources */,
 				8497D1A321801E6300EF5EB7 /* AppDelegate.m in Sources */,
 				254E3BB822894DA200205713 /* UIColor+MLPFlatColors.m in Sources */,
@@ -1110,6 +1146,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1135,7 +1172,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1168,6 +1205,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1187,7 +1225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

@@ -102,16 +102,17 @@
                                  @"password":[pwd MD5PwdEncryption]};
     
 //    NSLog(@"开始验证:%@",parameters);
-    [manager POST:URL parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+    [manager POST:URL parameters:parameters headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
         
-    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-//        NSLog(@"验证数据:%@",responseObject);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"验证数据:%@",responseObject);
         NSString *status = [responseObject objectForKey:@"status"];
         if ([status isEqualToString:@"OK"]) {
             NSDictionary *item = [[responseObject objectForKey:@"data"] objectForKey:@"item"];
             [self verifyResponse:item];
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+
         NSLog(@"验证失败:%@",error);
     }];
 }

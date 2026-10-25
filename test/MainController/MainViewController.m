@@ -46,11 +46,13 @@
                                     @"VehicleRouteController":@"行驶轨迹",
                                     @"TencentRecognitionViewController":@"身份验证(腾讯)",
                                     @"CustomKeyboardController":@"自定义键盘",
-                                    @"CustomChatViewController":@"聊天",
+//                                    @"CustomChatViewController":@"聊天",
                                     @"DatePickerController":@"时间弹框",
                                     @"AlertSheetViewController":@"选项",
-                                    @"MatchingViewController":@"匹配"
-                                    }];//   @"NFCViewController":@"NFC"
+                                    @"MatchingViewController":@"匹配",
+                                    @"ShowListViewController":@"CollectionView样式",
+                                    @"CommonTestViewController":@"测试类"
+                                  }];//   @"NFCViewController":@"NFC"
     [self.optionTable reloadData];
 }
 
